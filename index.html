@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="icon" href="./dist/images/logo.png">
+    <title>Sneakers</title>
+</head>
+
+<body>
+    <header>
+        <div class="w-full md:h-[120px] bg-white flex items-center">
+            <div class="container_ ">
+                <div class="flex justify-between">
+                    <img src="./dist/images/logo.png" alt="logo" class="hidden lg:block" class="cursor-pointer">
+                    <img src="./dist/images/top-img.png" alt="top-img" class="w-full lg:w-auto" class="cursor-pointer">
+                </div>
+            </div>
+        </div>
+        <nav
+            class="w-full h-[80px] flex items-center lg:items-start bg-white border-[1px] border-[#DEE2E6] shadow-[0px_2px_13px_0px_rgba(0,0,0,0.10)]">
+            <div class="container_">
+                <ul class="flex gap-[15px] justify-end pt-[29px] max-lg:absolute max-lg:bg-white max-lg:h-screen max-lg:w-full max-lg:top-0 max-lg:-left-full  max-lg:flex-col max-lg:items-center max-lg:justify-center max-lg:ease-linear max-lg:duration-300 max-lg:z-10"
+                    id="navbar">
+                    <li><a href="#home" class="text-black font-Roboto text-[18px] font-normal hover:stroke"
+                            onclick="openNav()">HOME</a></li>
+                    <li><a href="#snk" class="text-black font-Roboto text-[18px] font-normal hover:stroke"
+                            onclick="openNav()">SNEAKERS
+                            KOPEN</a></li>
+                    <li><a href="" class="text-black font-Roboto text-[18px] font-normal hover:stroke"
+                            onclick="openNav()">INTERVIEWS</a>
+                    </li>
+                    <li><a href="" class="text-black font-Roboto text-[18px] font-normal hover:stroke"
+                            onclick="openNav()">SALE</a></li>
+                    <li><a href="" class="text-black font-Roboto text-[18px] font-normal hover:stroke"
+                            onclick="openNav()">SNEAKER VAN DE
+                            DAG</a></li>
+                    <li><a href="#sneakers" class="text-black font-Roboto text-[18px] font-normal hover:stroke"
+                            onclick="openNav()">SNEAKER FORUM</a>
+                    </li>
+                    <li><a href="#blog" class="text-black font-Roboto text-[18px] font-normal hover:stroke"
+                            onclick="openNav()">BLOG</a></li>
+                </ul>
+                <div class="flex justify-between items-center lg:hidden">
+                    <img src="./dist/images/logo.png" alt="logo" class="h-[61px]">
+                    <div class="block relative lg:hidden z-40" onclick="openNav()">
+                        <span class="h-1 w-9 bg-black block"></span>
+                        <span class="my-2 h-1 w-9 bg-black block"></span>
+                        <span class="h-1 w-9 bg-black block"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="container_">
+            <div class="row pt-[25px] md:pt-[88px]">
+                <div class="col-12 md:col-6">
+                    <img src="./dist/images/hero-img.png" alt="hero-img" class="cursor-pointer">
+                    <div class="flex gap-[25px] mt-[7px] md:mt-[30px] overflow-x-scroll 2xl:overflow-x-visible">
+                        <img src="./dist/images/shoes-img1.png" alt="shoes-img1" class="cursor-pointer">
+                        <img src="./dist/images/shoes--img2.png" alt="shoes-img1" class="cursor-pointer">
+                        <img src="./dist/images/show-img3.png" alt="shoes-img1" class="cursor-pointer">
+                        <img src="./dist/images/shoes-img4.png" alt="shoes-img1" class="cursor-pointer">
+                    </div>
+                    <p class="text-black font-poppins text-[18px] font-semibold mt-2 2xl:hidden">Swipe Right For More ->
+                    </p>
+                </div>
+                <div class="col-12 md:col-6 pt-[15px] md:pt-0 xl:pt-[37px] md:pl-[39px]">
+                    <h2 class="text-black font-poppins text-[25px] sm:text-[28px] md:text-[30px] font-semibold">PREMIUM
+                        MENS SPORTS LATHER KEDS</h2>
+                    <div class="sm:flex items-center gap-[10px] mt-[14px]">
+                        <img src="./dist/images/star'img.svg" alt="star">
+                        <p class="mt-[10px] sm:mt-0 font-poppins text-[20px] font-normal leading-[134%]"
+                            style="color: rgba(0, 0, 0, 0.70);">( 5 Customer Review )</p>
+                    </div>
+                    <p
+                        class="max-w-[610px] text-black font-poppins text-[18px] sm:text-[20px] font-normal leading-[185%] opacity-[0.6] mt-[13px] md:mt-[33px]">
+                        Sed nec ultricies felis, vitae facilisis ipsum. Morbi id turpis euismod, rhoncus tortor quis,
+                        lobortis sapien. Sed imperdiet nulla in leo ullamcorper, in finibus elit porta. Sed eget congue
+                        neque, mattis finibus neque. In vel dolor ac augue pretium</p>
+                    <div class="flex items-center gap-[2px] sm:gap-[21px] mt-[30px] md:mt-[2px] lg:10px xl:mt-[87px]">
+                        <p class="text-black font-poppins text-[20px] font-medium leading-[125%]">Qty:</p>
+                        <div
+                            class="w-[108px] h-[45px] rounded-[21px] border-[1px] border-[#E8E8E8] bg-[rgba(196, 196, 196, 0.00)] flex justify-center items-center">
+                            <div class="flex gap-[18px]">
+                                <button class="text-[#555] font-Josefin text-[20px] font-normal leading-[125%]"
+                                    id="minusbtn">-</button>
+                                <p class="text-[#555] font-Josefin text-[20px] font-normal leading-[125%] w-[20px] flex justify-center"
+                                    id="counting">1</p>
+                                <button class="text-[#555] font-Josefin text-[20px] font-normal leading-[125%]"
+                                    id="addbtn">+</button>
+                            </div>
+                        </div>
+                        <button
+                            class="text-white font-poppins text-[12px] sm:text-[20px] font-medium leading-[125%] p-[10px_32px_10px_33px] rounded-[21px] bg-[#28A745] hover:bg-white hover:text-[#28a745] border-[1px] border-[#28a745] duration-300 text-nowrap">Add
+                            to Cart</button>
+                    </div>
+                    <div class="flex items-center gap-[16px] mt-[20px]">
+                        <p class="text-black font-poppins text-[20px] font-medium leading-[125%]">Size:</p>
+                        <div
+                            class="w-[117px] h-[45px] rounded-[21px] border-[1px] border-[#E8E8E8] bg-[rgba(196, 196, 196, 0.00)] flex items-center justify-center">
+                            <div class="flex justify-center">
+                                <select
+                                    class="cursor-pointer text-[#555] font-Josefin text-[20px] font-normal leading-[125%] outline-none">
+                                    <option value="">S</option>
+                                    <option value="">M</option>
+                                    <option value="">L</option>
+                                    <option value="">XL</option>
+                                    <option value="">XXL</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-[24px] mt-[20px]">
+                        <p class="text-black font-poppins text-[20px] font-medium leading-[125%]">Color:</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="155" height="35" viewBox="0 0 155 35"
+                            fill="none">
+                            <rect x="0.5" y="0.5" width="34" height="34" rx="1.5" stroke="#D5D5D5" />
+                            <rect x="3" y="3" width="29" height="30" fill="#CC111C" />
+                            <rect x="40.5" y="0.5" width="34" height="34" rx="1.5" stroke="#D5D5D5" />
+                            <rect x="43" y="3" width="29" height="30" fill="#AA9E78" />
+                            <rect x="80.5" y="0.5" width="34" height="34" rx="1.5" stroke="#D5D5D5" />
+                            <rect x="83" y="3" width="29" height="30" fill="#16141F" />
+                            <rect x="120.5" y="0.5" width="34" height="34" rx="1.5" stroke="#D5D5D5" />
+                            <rect x="123" y="3" width="29" height="30" fill="#808082" />
+                        </svg>
+                    </div>
+                    <div class="flex gap-[27px] mt-[34px]">
+                        <div class="flex items-center">
+                            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none">
+                                <path opacity="0.6"
+                                    d="M6.00977 2C4.07977 2 2.50977 3.57 2.50977 5.5C2.50977 7.08 3.56977 8.403 5.00977 8.837V15.997C5.00877 16.176 5.03677 17.778 6.18377 18.928C6.89177 19.64 7.83977 20 8.99977 20V22L12.9998 19L8.99977 16V18C7.17677 18 7.01577 16.466 7.00977 16V8.837C8.44977 8.403 9.50977 7.08 9.50977 5.5C9.50977 3.57 7.93877 2 6.00977 2ZM6.00977 7C5.18277 7 4.50977 6.327 4.50977 5.5C4.50977 4.673 5.18277 4 6.00977 4C6.83677 4 7.50977 4.673 7.50977 5.5C7.50977 6.327 6.83677 7 6.00977 7ZM19.0098 15.163V7.997C19.0048 6.391 17.9328 4 14.9998 4V2L10.9998 5L14.9998 8V6C16.8288 6 17.0008 7.539 17.0098 8V15.163C15.5698 15.597 14.5098 16.92 14.5098 18.5C14.5098 20.43 16.0798 22 18.0098 22C19.9398 22 21.5098 20.43 21.5098 18.5C21.5098 16.92 20.4498 15.597 19.0098 15.163ZM18.0098 20C17.1828 20 16.5098 19.327 16.5098 18.5C16.5098 17.673 17.1828 17 18.0098 17C18.8368 17 19.5098 17.673 19.5098 18.5C19.5098 19.327 18.8368 20 18.0098 20Z"
+                                    fill="black" />
+                            </svg>
+                            <p class="color-[#222] font-poppins text-[16px] font-light leading-[125%]">Compare</p>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="29" height="29"
+                                viewBox="0 0 29 29" fill="none">
+                                <path opacity="0.6"
+                                    d="M14.5006 23.0258L14.1526 22.7358C6.67062 16.6458 4.64062 14.4998 4.64062 11.0198C4.64062 8.1198 6.96062 5.7998 9.86062 5.7998C12.2386 5.7998 13.5726 7.1338 14.5006 8.1778C15.4286 7.1338 16.7626 5.7998 19.1406 5.7998C22.0406 5.7998 24.3606 8.1198 24.3606 11.0198C24.3606 14.4998 22.3306 16.6458 14.8486 22.7358L14.5006 23.0258ZM9.86062 6.9598C7.59862 6.9598 5.80062 8.7578 5.80062 11.0198C5.80062 13.9778 7.65662 15.9498 14.5006 21.5178C21.3446 15.9498 23.2006 13.9778 23.2006 11.0198C23.2006 8.7578 21.4026 6.9598 19.1406 6.9598C17.1106 6.9598 16.0086 8.1778 15.1386 9.1638L14.5006 9.9178L13.8626 9.1638C12.9926 8.1778 11.8906 6.9598 9.86062 6.9598Z"
+                                    fill="black" />
+                            </svg>
+                            <p class="color-[#222] font-poppins text-[16px] font-light leading-[125%]">Wishlist</p>
+                        </div>
+                    </div>
+                    <div class="max-w-[541px] h-[1px] opacity-50 bg-black mt-[24px]"></div>
+                    <div class="flex gap-[25px] items-center mt-[26px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                            <g opacity="0.4">
+                                <path
+                                    d="M5.04231 13.7499C5.84408 13.7475 6.61551 13.4431 7.20289 12.8974L12.9412 16.1763C12.749 16.9276 12.8337 17.723 13.18 18.417C13.5262 19.1109 14.1109 19.6569 14.8268 19.955C15.5427 20.2531 16.342 20.2834 17.0785 20.0404C17.8149 19.7973 18.4392 19.2971 18.837 18.6314C19.2348 17.9657 19.3795 17.179 19.2447 16.4153C19.1098 15.6516 18.7045 14.962 18.1027 14.4727C17.501 13.9835 16.7432 13.7273 15.9681 13.7511C15.1929 13.7749 14.4523 14.0771 13.8817 14.6024L8.14339 11.3235C8.20389 11.0943 8.23689 10.8569 8.24239 10.6195L13.8799 7.39741C14.4227 7.89128 15.1189 8.18345 15.8516 8.2249C16.5843 8.26634 17.309 8.05454 17.904 7.62503C18.4991 7.19552 18.9283 6.57442 19.1198 5.86595C19.3112 5.15748 19.2531 4.40472 18.9553 3.73398C18.6575 3.06323 18.1381 2.51531 17.4842 2.18212C16.8304 1.84893 16.0818 1.75076 15.3641 1.90406C14.6464 2.05737 14.0033 2.45283 13.5426 3.0241C13.0819 3.59537 12.8317 4.3077 12.834 5.04157C12.8376 5.30557 12.8734 5.56866 12.9412 5.82349L7.73089 8.79991C7.42874 8.33246 7.01018 7.95167 6.51633 7.69493C6.02248 7.4382 5.47033 7.31436 4.91414 7.33558C4.35795 7.3568 3.81684 7.52235 3.34399 7.81597C2.87114 8.10959 2.48281 8.52117 2.21715 9.01028C1.95149 9.49938 1.81765 10.0492 1.82877 10.6057C1.83989 11.1622 1.99559 11.7062 2.28057 12.1843C2.56556 12.6624 2.97002 13.0581 3.45422 13.3326C3.93843 13.6071 4.48571 13.7509 5.04231 13.7499Z"
+                                    fill="black" />
+                            </g>
+                        </svg>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
+                                fill="none">
+                                <g clip-path="url(#clip0_776_648)">
+                                    <path
+                                        d="M21.4958 22.7477C22.1892 22.7477 22.7515 22.1855 22.7515 21.492V1.25178C22.7515 0.558216 22.1892 -0.00390625 21.4958 -0.00390625H1.25569C0.562034 -0.00390625 0 0.558216 0 1.25178V21.492C0 22.1855 0.562034 22.7477 1.25569 22.7477H21.4958Z"
+                                        fill="#395185" />
+                                    <path
+                                        d="M15.6983 22.7479V13.9373H18.6557L19.0985 10.5037H15.6983V8.3114C15.6983 7.31726 15.9744 6.63978 17.4 6.63978L19.2183 6.63898V3.56797C18.9036 3.52611 17.8244 3.43262 16.5688 3.43262C13.9472 3.43262 12.1525 5.03278 12.1525 7.97146V10.5037H9.1875V13.9373H12.1525V22.7479H15.6983Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_776_648">
+                                        <rect width="22.7515" height="22.7515" fill="white"
+                                            transform="translate(0 -0.00390625)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"
+                            target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 19"
+                                fill="none">
+                                <g clip-path="url(#clip0_776_651)">
+                                    <path
+                                        d="M23.5035 2.6541C22.6663 3.02532 21.7667 3.27621 20.8225 3.38908C21.7864 2.8114 22.5264 1.89663 22.8749 0.806694C21.9586 1.35041 20.9562 1.73349 19.9109 1.93938C19.0594 1.03225 17.8463 0.465332 16.5037 0.465332C13.9259 0.465332 11.8359 2.55527 11.8359 5.13295C11.8359 5.49884 11.8772 5.85504 11.9567 6.19676C8.07741 6.00204 4.63802 4.14379 2.33576 1.31976C1.93405 2.00915 1.70387 2.81105 1.70387 3.66636C1.70387 5.28581 2.52799 6.71445 3.78039 7.55154C3.03915 7.52833 2.31421 7.32812 1.6661 6.96764C1.66584 6.9872 1.66584 7.00675 1.66584 7.02639C1.66584 9.28794 3.27479 11.1745 5.41006 11.6034C4.7227 11.7903 4.00171 11.8176 3.30217 11.6833C3.89611 13.5378 5.61998 14.8872 7.66246 14.925C6.06497 16.1769 4.05226 16.9231 1.86544 16.9231C1.48862 16.9231 1.11713 16.901 0.751953 16.8579C2.81763 18.1823 5.27115 18.955 7.90713 18.955C16.4929 18.955 21.1878 11.8424 21.1878 5.67427C21.1878 5.47182 21.1833 5.27052 21.1743 5.07038C22.0881 4.40977 22.8768 3.59155 23.5035 2.6541Z"
+                                        fill="#55ACEE" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_776_651">
+                                        <rect width="22.7515" height="18.5745" fill="white"
+                                            transform="translate(0.751953 0.392578)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="https://in.pinterest.com/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23"
+                                fill="none">
+                                <g clip-path="url(#clip0_776_653)">
+                                    <path
+                                        d="M0.503906 11.372C0.503906 16.0302 3.30501 20.032 7.31328 21.7914C7.28128 20.9971 7.30759 20.0435 7.51128 19.1792C7.73 18.2557 8.97503 12.9805 8.97503 12.9805C8.97503 12.9805 8.61162 12.2541 8.61162 11.1806C8.61162 9.49476 9.58869 8.2357 10.8055 8.2357C11.8403 8.2357 12.3402 9.01289 12.3402 9.94357C12.3402 10.9837 11.6768 12.5396 11.3356 13.9807C11.0506 15.1874 11.9406 16.1717 13.1311 16.1717C15.2864 16.1717 16.7381 13.4034 16.7381 10.1235C16.7381 7.63021 15.0588 5.76405 12.0045 5.76405C8.55377 5.76405 6.40402 8.33746 6.40402 11.212C6.40402 12.2031 6.69623 12.902 7.15393 13.4432C7.36438 13.6918 7.39362 13.7918 7.31745 14.0772C7.26288 14.2865 7.13757 14.7904 7.08567 14.9901C7.00995 15.2783 6.77648 15.3813 6.51608 15.2749C4.92668 14.626 4.18645 12.8854 4.18645 10.9288C4.18645 7.6973 6.91184 3.82244 12.3167 3.82244C16.66 3.82244 19.5186 6.96535 19.5186 10.3391C19.5186 14.8016 17.0376 18.1355 13.3805 18.1355C12.1523 18.1355 10.9971 17.4717 10.6013 16.7176C10.6013 16.7176 9.9409 19.3386 9.80101 19.8447C9.55981 20.7218 9.08772 21.5985 8.65606 22.2817C9.70277 22.5912 10.7886 22.7483 11.8801 22.7482C18.162 22.7482 23.2555 17.655 23.2555 11.372C23.2555 5.08932 18.162 -0.00390625 11.8801 -0.00390625C5.59758 -0.00390625 0.503906 5.08932 0.503906 11.372Z"
+                                        fill="#CB1F27" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_776_653">
+                                        <rect width="22.7515" height="22.7515" fill="white"
+                                            transform="translate(0.503906 -0.00390625)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="https://www.google.com/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29"
+                                fill="none">
+                                <path
+                                    d="M26.3856 12.034H25.4202V11.9843H14.6345V16.7779H21.4073C20.4193 19.5684 17.7642 21.5716 14.6345 21.5716C10.6636 21.5716 7.44404 18.352 7.44404 14.3811C7.44404 10.4102 10.6636 7.19062 14.6345 7.19062C16.4675 7.19062 18.1351 7.88211 19.4048 9.01161L22.7945 5.6219C20.6541 3.62714 17.7911 2.39697 14.6345 2.39697C8.01628 2.39697 2.65039 7.76287 2.65039 14.3811C2.65039 20.9993 8.01628 26.3652 14.6345 26.3652C21.2528 26.3652 26.6186 20.9993 26.6186 14.3811C26.6186 13.5776 26.536 12.7932 26.3856 12.034Z"
+                                    fill="#FFC107" />
+                                <path
+                                    d="M4.0332 8.80309L7.97059 11.6907C9.03598 9.05296 11.6162 7.19062 14.6356 7.19062C16.4685 7.19062 18.1361 7.88211 19.4058 9.01161L22.7956 5.6219C20.6552 3.62714 17.7922 2.39697 14.6356 2.39697C10.0325 2.39697 6.04054 4.99573 4.0332 8.80309Z"
+                                    fill="#FF3D00" />
+                                <path
+                                    d="M14.6357 26.365C17.7312 26.365 20.5438 25.1804 22.6704 23.2539L18.9613 20.1153C17.7177 21.0611 16.1981 21.5726 14.6357 21.5714C11.5186 21.5714 8.8719 19.5838 7.87482 16.8101L3.9668 19.8211C5.95017 23.7021 9.97803 26.365 14.6357 26.365Z"
+                                    fill="#4CAF50" />
+                                <path
+                                    d="M26.3858 12.0341H25.4205V11.9844H14.6348V16.778H21.4076C20.9349 18.1061 20.0836 19.2666 18.9586 20.1162L18.9604 20.115L22.6695 23.2536C22.4071 23.4921 26.6189 20.3733 26.6189 14.3812C26.6189 13.5777 26.5362 12.7933 26.3858 12.0341Z"
+                                    fill="#1976D2" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="snk">
+        <div class="container_ mb-[87px]">
+            <h3 class="text-black font-poppins text-[28px] lg:text-[25px] font-medium leading-[125%] mt-[81px]">You can
+                buy the Nike
+                Air Max 97 Men's Shoe - White here:</h3>
+            <div class="row mt-[38px]">
+                <div class="col-12 flex justify-center xl:block md:col-6 xl:col-3 mt-[20px] xl:mt-0">
+                    <!-- card -->
+                    <div
+                        class="max-w-[312px] h-full rounded-[10px] bg-white shadow-[23px_44px_47px_0px_rgba(0,0,0,0.02)]">
+                        <img src="./dist/images/card1-img.png" alt="card1-img" class="opacity-100 cursor-pointer">
+                        <div class="flex items-center mt-[28px] pl-[19px] xl:gap-[52px] gap-[68px] 2xl:gap-[68px]">
+                            <div class="flex items-center gap-[17px]">
+                                <p class="text-black font-poppins text-[16px] font-normal leading-[125%] opacity-80">
+                                    Price:</p>
+                                <p class="text-black font-poppins text-[20px] font-semibold leading-[125%]">€179,99</p>
+                            </div>
+                            <button
+                                class="text-white font-poppins text-[10px] font-normal leading-[125%] p-[4px_10px_3px_11px] rounded-[3px] border-[#E8E8E8] bg-[#28A745]  hover:bg-white hover:text-[#28a745] border-[1px] border-transparent hover:border-[#28a745] duration-300">Best
+                                Price</button>
+                        </div>
+                        <p
+                            class="text-black font-poppins text-[16px] font-normal leading-[125%] opacity-80 pl-[19px] mt-[16px]">
+                            Size:</p>
+                        <div class="flex gap-[11px] ml-[19px] mt-[10px]">
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_32px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    41</p>
+                            </div>
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_28px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    42</p>
+                            </div>
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_28px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    43</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[11.74px] ml-[19px] mt-[10px]">
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_27px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    44</p>
+                            </div>
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_26.99px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    45</p>
+                            </div>
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_26.99px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    46</p>
+                            </div>
+                        </div>
+                        <p
+                            class="text-[#454729] font-poppins text-[16px] font-normal leading-[125%] pl-[19px] mt-[19px]">
+                            View this product as:</p>
+                        <p
+                            class="text-[#007BFF] text-[16px] font-poppins font-semibold leading-[125%] pl-[19px] mt-[8px] pb-[31px]">
+                            Foot Locker NL</p>
+                    </div>
+                </div>
+                <div class="col-12 flex justify-center xl:block md:col-6 xl:col-3 mt-[20px] xl:mt-0">
+                    <!-- card -->
+                    <div
+                        class="max-w-[312px] h-full rounded-[10px] bg-white shadow-[23px_44px_47px_0px_rgba(0,0,0,0.02)]">
+                        <img src="./dist/images/card2-img.png" alt="card1-img" class="opacity-100 cursor-pointer">
+                        <div class="flex items-center mt-[28px] pl-[19px] xl:gap-[52px] gap-[68px] 2xl:gap-[68px]">
+                            <div class="flex items-center gap-[17px]">
+                                <p class="text-black font-poppins text-[16px] font-normal leading-[125%] opacity-80">
+                                    Price:</p>
+                                <p class="text-black font-poppins text-[20px] font-semibold leading-[125%]">€179,99</p>
+                            </div>
+                            <button
+                                class="text-white font-poppins text-[10px] font-normal leading-[125%] p-[4px_10px_3px_11px] rounded-[3px] border-[#E8E8E8] bg-[#28A745]  hover:bg-white hover:text-[#28a745] border-[1px] border-transparent hover:border-[#28a745] duration-300">Best
+                                Price</button>
+                        </div>
+                        <p
+                            class="text-black font-poppins text-[16px] font-normal leading-[125%] opacity-80 pl-[19px] mt-[16px]">
+                            Size:</p>
+                        <div class="flex gap-[11px] ml-[19px] mt-[10px]">
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_32px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    41</p>
+                            </div>
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_28px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    42</p>
+                            </div>
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_28px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    43</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[11.74px] ml-[19px] mt-[10px]">
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_27px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    44</p>
+                            </div>
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_26.99px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    45</p>
+                            </div>
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_26.99px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    46</p>
+                            </div>
+                        </div>
+                        <p
+                            class="text-[#454729] font-poppins text-[16px] font-normal leading-[125%] pl-[19px] mt-[19px]">
+                            View this product as:</p>
+                        <p
+                            class="text-[#007BFF] text-[16px] font-poppins font-semibold leading-[125%] pl-[19px] mt-[8px] pb-[31px]">
+                            Foot Locker NL</p>
+                    </div>
+                </div>
+                <div class="col-12 flex justify-center xl:block md:col-6 xl:col-3 mt-[20px] xl:mt-0">
+                    <!-- card -->
+                    <div
+                        class="max-w-[312px] h-full rounded-[10px] bg-white shadow-[23px_44px_47px_0px_rgba(0,0,0,0.02)]">
+                        <img src="./dist/images/card1-img.png" alt="card1-img" class="opacity-100 cursor-pointer">
+                        <div class="flex items-center mt-[28px] pl-[19px] xl:gap-[52px] gap-[68px] 2xl:gap-[68px]">
+                            <div class="flex items-center gap-[17px]">
+                                <p class="text-black font-poppins text-[16px] font-normal leading-[125%] opacity-80">
+                                    Price:</p>
+                                <p class="text-black font-poppins text-[20px] font-semibold leading-[125%]">€179,99</p>
+                            </div>
+                            <button
+                                class="text-white font-poppins text-[10px] font-normal leading-[125%] p-[4px_10px_3px_11px] rounded-[3px] border-[#E8E8E8] bg-[#28A745]  hover:bg-white hover:text-[#28a745] border-[1px] border-transparent hover:border-[#28a745] duration-300">Best
+                                Price</button>
+                        </div>
+                        <p
+                            class="text-black font-poppins text-[16px] font-normal leading-[125%] opacity-80 pl-[19px] mt-[16px]">
+                            Size:</p>
+                        <div class="flex gap-[11px] ml-[19px] mt-[10px]">
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_32px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    41</p>
+                            </div>
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_28px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    42</p>
+                            </div>
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_28px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    43</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[11.74px] ml-[19px] mt-[10px]">
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_27px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    44</p>
+                            </div>
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_26.99px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    45</p>
+                            </div>
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_26.99px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    46</p>
+                            </div>
+                        </div>
+                        <p
+                            class="text-[#454729] font-poppins text-[16px] font-normal leading-[125%] pl-[19px] mt-[19px]">
+                            View this product as:</p>
+                        <p
+                            class="text-[#007BFF] text-[16px] font-poppins font-semibold leading-[125%] pl-[19px] mt-[8px] pb-[31px]">
+                            Foot Locker NL</p>
+                    </div>
+                </div>
+                <div class="col-12 flex justify-center xl:block md:col-6 xl:col-3 mt-[20px] xl:mt-0">
+                    <!-- card -->
+                    <div
+                        class="max-w-[312px] h-full rounded-[10px] bg-white shadow-[23px_44px_47px_0px_rgba(0,0,0,0.02)]">
+                        <img src="./dist/images/card2-img.png" alt="card1-img" class="opacity-100 cursor-pointer">
+                        <div class="flex items-center mt-[28px] pl-[19px] xl:gap-[52px] gap-[68px] 2xl:gap-[68px]">
+                            <div class="flex items-center gap-[17px]">
+                                <p class="text-black font-poppins text-[16px] font-normal leading-[125%] opacity-80">
+                                    Price:</p>
+                                <p class="text-black font-poppins text-[20px] font-semibold leading-[125%]">€179,99</p>
+                            </div>
+                            <button
+                                class="text-white font-poppins text-[10px] font-normal leading-[125%] p-[4px_10px_3px_11px] rounded-[3px] border-[#E8E8E8] bg-[#28A745]  hover:bg-white hover:text-[#28a745] border-[1px] border-transparent hover:border-[#28a745] duration-300">Best
+                                Price</button>
+                        </div>
+                        <p
+                            class="text-black font-poppins text-[16px] font-normal leading-[125%] opacity-80 pl-[19px] mt-[16px]">
+                            Size:</p>
+                        <div class="flex gap-[11px] ml-[19px] mt-[10px]">
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_32px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    41</p>
+                            </div>
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_28px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black cursor-pointer duration-300">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    42</p>
+                            </div>
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_28px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    43</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[11.74px] ml-[19px] mt-[10px]">
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_27px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    44</p>
+                            </div>
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_26.99px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%] group-hover:text-white duration-300">
+                                    45</p>
+                            </div>
+                            <!-- sizecard -->
+                            <div
+                                class="p-[8px_26.99px_7px_32px] rounded-[40px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white flex justify-center items-center group hover:bg-black duration-300 cursor-pointer">
+                                <p
+                                    class="text-[#181818] font-poppins text-[16px] font-medium leading-[125%]  group-hover:text-white duration-300">
+                                    46</p>
+                            </div>
+                        </div>
+                        <p
+                            class="text-[#454729] font-poppins text-[16px] font-normal leading-[125%] pl-[19px] mt-[19px]">
+                            View this product as:</p>
+                        <p
+                            class="text-[#007BFF] text-[16px] font-poppins font-semibold leading-[125%] pl-[19px] mt-[8px] pb-[31px]">
+                            Foot Locker NL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container_">
+            <div class="flex gap-[10px] sm:gap-[37px] lg:gap-[91px] tabs">
+                <button
+                    class="text-black font-poppins text-[11px] sm:text-[13px] md:text-[16px] lg:text-[20px] font-normal leading-[125%] bottom_line"
+                    onclick="navtabs('tab1')">DESCRIPTION</button>
+                <button
+                    class="text-black font-poppins text-[11px] sm:text-[13px] md:text-[16px] lg:text-[20px] font-normal leading-[125%] bottom_line"
+                    onclick="navtabs('tab2')">ADDITIONAL INFORMATION</button>
+                <button
+                    class="text-black font-poppins text-[11px] sm:text-[13px] md:text-[16px] lg:text-[20px] font-normal leading-[125%] bottom_line"
+                    onclick="navtabs('tab3')">REVIEWS (1)</button>
+            </div>
+            <div class="tabshow" id="tab1">
+                <p
+                    class="mt-[27px] text-black font-poppins text-[12px] sm:text-[14px] md:texxt-[18px] lg:text-[20px] font-normal leading-[185%]">
+                    Sed nec ultricies felis, vitae facilisis ipsum. Morbi id turpis euismod, rhoncus tortor quis,
+                    lobortis sapien. Sed imperdiet nulla in leo ullamcorper, in finibus elit porta. Sed eget congue
+                    neque, mattis finibus neque. In vel dolor ac augue pretium suscipit. Ut nec massa in ligula
+                    vestibulum mattis. Suspendisse imperdiet lorem eleifend nisi euismod, vel consequat ipsum luctus.
+                    Morbi auctor vulputate hendrerit. Etiam vel lectus tortor. Pellentesque non pharetra mi. Cura</p>
+            </div>
+            <div class="tabshow" id="tab2">
+                <p
+                    class="mt-[27px] text-black font-poppins text-[12px] sm:text-[14px] md:texxt-[18px] lg:text-[20px] font-normal leading-[185%]">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque autem magnam earum quis natus, atque
+                    animi! Voluptatem omnis consectetur sapiente dolores necessitatibus, incidunt esse nisi illo magni
+                    repudiandae voluptate? Minima animi eum ipsam voluptate blanditiis autem qui praesentium ab
+                    laudantium officiis magnam ea numquam delectus quis ducimus, magni quaerat illum molestias doloribus
+                    esse eaque quia! Praesentium mollitia recusandae</p>
+            </div>
+            <div class="tabshow" id="tab3">
+                <p
+                    class="mt-[27px] text-black font-poppins text-[12px] sm:text-[14px] md:texxt-[18px] lg:text-[20px] font-normal leading-[185%]">
+                    I recently purchased a pair of shoes from Shoes brand, and I have to say, I'm thoroughly impressed.
+                    Not only are they stylish and trendy, but they're also incredibly comfortable to wear. The padding
+                    on the sole is just the right amount, providing enough support for my feet without feeling too bulky
+                    or heavy. Additionally, the shoes are made of high-quality materials that have held up well against
+                    regular wear and tear.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container_">
+            <p class="text-black font-poppins text-[30px] font-semibold mt-[92px]">RELATED PRODUCT</p>
+            <div class="row mt-10">
+                <div class="col-12 md:col-6 lg:col-3 mt-7 flex justify-center lg:block lg:mt-0">
+                    <!-- pro-card1 -->
+                    <div
+                        class="max-w-[312px] w-full h-full rounded-[17px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white pb-[30px]">
+                        <div class="relative overflow-hidden"><img src="./dist/images/red_shoes_related.png"
+                                alt="procard-img1">
+                            <div
+                                class="w-[117px] h-[22px] bg-[#d36b31] absolute -rotate-45 top-5 left-[-25px] flex items-center justify-center">
+                                <p class="text-white font-poppins text-[14px] font-normal leading-[34px]">-10% OFF</p>
+                            </div>
+                            <div
+                                class="w-[68px] h-[29px] rounded-tr-[14px] bg-[#555] absolute top-0 right-0 flex items-center justify-center">
+                                <p class="text-white font-poppins text-[14px] font-normal leading-[34px]">NEW</p>
+                            </div>
+                        </div>
+                        <div class="pl-[14px]">
+                            <div class="flex gap-[40px]">
+                                <div>
+                                    <h3
+                                        class="text-[#555] font-poppins text-[18px] leading-[34px] font-medium mt-[18px]">
+                                        Quickiins Mens Shoes</h3>
+                                    <p class="text-[#555] font-poppins text-[18px] font-medium leading-[34px]">
+                                        $90.00<span class="text-[#F00] ml-1">$70.00</span></p>
+                                </div>
+                                <svg class="mt-[29px] cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="49"
+                                    height="49" viewBox="0 0 49 49" fill="none">
+                                    <g clip-path="url(#clip0_776_387)">
+                                        <path
+                                            d="M24.5 0.386963C11.2452 0.386963 0.5 11.1321 0.5 24.387C0.5 37.6418 11.2452 48.387 24.5 48.387C37.7548 48.387 48.5 37.6418 48.5 24.387C48.5 11.1321 37.7548 0.386963 24.5 0.386963ZM12.4033 10.5266L16.6748 11.8684C17.2403 12.0541 17.6169 12.5792 17.6826 13.1164L17.9228 15.4689L37.2646 17.6281C38.0952 17.789 38.6788 18.5388 38.5625 19.3097L37.3613 26.0772C37.2084 26.7851 36.6222 27.2704 35.9697 27.2784H18.7871L18.4502 29.1974H34.7686C35.6218 29.2274 36.2468 29.8772 36.2568 30.6358C36.2214 31.5014 35.5238 32.0679 34.7686 32.0772H16.7217C15.8114 32.002 15.1432 31.2806 15.2832 30.3985L16.0508 26.1739L14.8496 14.3645L11.539 13.3098C11.155 13.1818 10.8668 12.9411 10.6748 12.5891C10.3115 11.8278 10.6508 10.9849 11.2988 10.6203C11.6687 10.4281 12.0299 10.4041 12.4033 10.5266ZM18.9072 32.9065C20.1499 32.9065 21.1572 33.9138 21.1572 35.1565C21.1572 36.3991 20.1499 37.4065 18.9072 37.4065C17.6647 37.4065 16.6572 36.3991 16.6572 35.1565C16.6572 33.9138 17.6646 32.9065 18.9072 32.9065ZM32.1142 32.9065C33.3568 32.9065 34.3642 33.9138 34.3642 35.1565C34.3642 36.3991 33.3568 37.4065 32.1142 37.4065C30.8716 37.4065 29.8642 36.3991 29.8642 35.1565C29.8642 33.9138 30.8716 32.9065 32.1142 32.9065Z"
+                                            fill="#28A745" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_776_387">
+                                            <rect width="48" height="48" fill="white"
+                                                transform="translate(0.5 0.386963)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <svg class="mt-[15px]" xmlns="http://www.w3.org/2000/svg" width="100" height="21"
+                                viewBox="0 0 100 21" fill="none">
+                                <path
+                                    d="M10.1705 2.99229C10.4884 2.11172 11.7338 2.11172 12.0517 2.99229L13.3673 6.63636C13.5104 7.03268 13.8865 7.29679 14.3079 7.29679H18.3219C19.3159 7.29679 19.7011 8.58975 18.8691 9.13375L15.8093 11.1345C15.4214 11.3882 15.2586 11.8751 15.416 12.3111L16.6263 15.6635C16.9523 16.5666 15.942 17.3655 15.1384 16.84L11.6584 14.5645C11.3259 14.3471 10.8963 14.3471 10.5638 14.5645L7.0838 16.84C6.28021 17.3655 5.26991 16.5666 5.59594 15.6635L6.80625 12.3111C6.96363 11.8751 6.80084 11.3882 6.41294 11.1345L3.35309 9.13375C2.52115 8.58975 2.90635 7.29679 3.90037 7.29679H7.91436C8.33571 7.29679 8.71186 7.03268 8.85494 6.63636L10.1705 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M29.6149 2.99229C29.9328 2.11172 31.1781 2.11172 31.496 2.99229L32.8116 6.63636C32.9547 7.03268 33.3308 7.29679 33.7522 7.29679H37.7662C38.7602 7.29679 39.1454 8.58975 38.3135 9.13375L35.2536 11.1345C34.8657 11.3882 34.7029 11.8751 34.8603 12.3111L36.0706 15.6635C36.3966 16.5666 35.3863 17.3655 34.5828 16.84L31.1027 14.5645C30.7703 14.3471 30.3406 14.3471 30.0082 14.5645L26.5281 16.84C25.7245 17.3655 24.7142 16.5666 25.0403 15.6635L26.2506 12.3111C26.408 11.8751 26.2452 11.3882 25.8573 11.1345L22.7974 9.13375C21.9655 8.58975 22.3507 7.29679 23.3447 7.29679H27.3587C27.78 7.29679 28.1562 7.03268 28.2993 6.63636L29.6149 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M49.0592 2.99229C49.3771 2.11172 50.6225 2.11172 50.9404 2.99229L52.256 6.63636C52.399 7.03268 52.7752 7.29679 53.1965 7.29679H57.2105C58.2045 7.29679 58.5897 8.58975 57.7578 9.13375L54.698 11.1345C54.31 11.3882 54.1473 11.8751 54.3046 12.3111L55.515 15.6635C55.841 16.5666 54.8307 17.3655 54.0271 16.84L50.5471 14.5645C50.2146 14.3471 49.785 14.3471 49.4525 14.5645L45.9725 16.84C45.1689 17.3655 44.1586 16.5666 44.4846 15.6635L45.6949 12.3111C45.8523 11.8751 45.6895 11.3882 45.3016 11.1345L42.2418 9.13375C41.4098 8.58975 41.795 7.29679 42.789 7.29679H46.803C47.2244 7.29679 47.6005 7.03268 47.7436 6.63636L49.0592 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M68.5035 2.99229C68.8214 2.11172 70.0668 2.11172 70.3847 2.99229L71.7003 6.63636C71.8434 7.03268 72.2195 7.29679 72.6409 7.29679H76.6549C77.6489 7.29679 78.0341 8.58975 77.2021 9.13375L74.1423 11.1345C73.7544 11.3882 73.5916 11.8751 73.749 12.3111L74.9593 15.6635C75.2853 16.5666 74.275 17.3655 73.4714 16.84L69.9914 14.5645C69.6589 14.3471 69.2293 14.3471 68.8968 14.5645L65.4168 16.84C64.6132 17.3655 63.6029 16.5666 63.9289 15.6635L65.1393 12.3111C65.2966 11.8751 65.1339 11.3882 64.7459 11.1345L61.6861 9.13375C60.8542 8.58975 61.2394 7.29679 62.2334 7.29679H66.2474C66.6687 7.29679 67.0449 7.03268 67.1879 6.63636L68.5035 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M87.9479 2.99229C88.2658 2.11172 89.5111 2.11172 89.829 2.99229L91.1446 6.63636C91.2877 7.03268 91.6639 7.29679 92.0852 7.29679H96.0992C97.0932 7.29679 97.4784 8.58975 96.6465 9.13375L93.5866 11.1345C93.1987 11.3882 93.0359 11.8751 93.1933 12.3111L94.4036 15.6635C94.7297 16.5666 93.7194 17.3655 92.9158 16.84L89.4357 14.5645C89.1033 14.3471 88.6736 14.3471 88.3412 14.5645L84.8611 16.84C84.0576 17.3655 83.0473 16.5666 83.3733 15.6635L84.5836 12.3111C84.741 11.8751 84.5782 11.3882 84.1903 11.1345L81.1304 9.13375C80.2985 8.58975 80.6837 7.29679 81.6777 7.29679H85.6917C86.1131 7.29679 86.4892 7.03268 86.6323 6.63636L87.9479 2.99229Z"
+                                    fill="#555555" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 md:pt-[14px] lg:pt-0 lg:col-3 mt-7 flex justify-center lg:block lg:mt-0">
+                    <!-- pro-card2 -->
+                    <div
+                        class="max-w-[312px] w-full h-full rounded-[17px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white pb-[30px]">
+                        <div class="relative overflow-hidden"><img src="./dist/images/grey_shoes_related.png"
+                                alt="procard-img1">
+                            <div
+                                class="w-[117px] h-[22px] bg-[#d36b31] absolute -rotate-45 top-5 left-[-25px] flex items-center justify-center">
+                                <p class="text-white font-poppins text-[14px] font-normal leading-[34px]">-10% OFF</p>
+                            </div>
+                            <div
+                                class="w-[68px] h-[29px] rounded-tr-[14px] bg-[#555] absolute top-0 right-0 flex items-center justify-center">
+                                <p class="text-white font-poppins text-[14px] font-normal leading-[34px]">NEW</p>
+                            </div>
+                        </div>
+                        <div class="pl-[14px]">
+                            <div class="flex gap-[40px]">
+                                <div>
+                                    <h3
+                                        class="text-[#555] font-poppins text-[18px] leading-[34px] font-medium mt-[18px]">
+                                        Quickiins Mens Shoes</h3>
+                                    <p class="text-[#555] font-poppins text-[18px] font-medium leading-[34px]">
+                                        $90.00<span class="text-[#F00] ml-1">$70.00</span></p>
+                                </div>
+                                <svg class="mt-[29px] cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="49"
+                                    height="49" viewBox="0 0 49 49" fill="none">
+                                    <g clip-path="url(#clip0_776_387)">
+                                        <path
+                                            d="M24.5 0.386963C11.2452 0.386963 0.5 11.1321 0.5 24.387C0.5 37.6418 11.2452 48.387 24.5 48.387C37.7548 48.387 48.5 37.6418 48.5 24.387C48.5 11.1321 37.7548 0.386963 24.5 0.386963ZM12.4033 10.5266L16.6748 11.8684C17.2403 12.0541 17.6169 12.5792 17.6826 13.1164L17.9228 15.4689L37.2646 17.6281C38.0952 17.789 38.6788 18.5388 38.5625 19.3097L37.3613 26.0772C37.2084 26.7851 36.6222 27.2704 35.9697 27.2784H18.7871L18.4502 29.1974H34.7686C35.6218 29.2274 36.2468 29.8772 36.2568 30.6358C36.2214 31.5014 35.5238 32.0679 34.7686 32.0772H16.7217C15.8114 32.002 15.1432 31.2806 15.2832 30.3985L16.0508 26.1739L14.8496 14.3645L11.539 13.3098C11.155 13.1818 10.8668 12.9411 10.6748 12.5891C10.3115 11.8278 10.6508 10.9849 11.2988 10.6203C11.6687 10.4281 12.0299 10.4041 12.4033 10.5266ZM18.9072 32.9065C20.1499 32.9065 21.1572 33.9138 21.1572 35.1565C21.1572 36.3991 20.1499 37.4065 18.9072 37.4065C17.6647 37.4065 16.6572 36.3991 16.6572 35.1565C16.6572 33.9138 17.6646 32.9065 18.9072 32.9065ZM32.1142 32.9065C33.3568 32.9065 34.3642 33.9138 34.3642 35.1565C34.3642 36.3991 33.3568 37.4065 32.1142 37.4065C30.8716 37.4065 29.8642 36.3991 29.8642 35.1565C29.8642 33.9138 30.8716 32.9065 32.1142 32.9065Z"
+                                            fill="#28A745" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_776_387">
+                                            <rect width="48" height="48" fill="white"
+                                                transform="translate(0.5 0.386963)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <svg class="mt-[15px]" xmlns="http://www.w3.org/2000/svg" width="100" height="21"
+                                viewBox="0 0 100 21" fill="none">
+                                <path
+                                    d="M10.1705 2.99229C10.4884 2.11172 11.7338 2.11172 12.0517 2.99229L13.3673 6.63636C13.5104 7.03268 13.8865 7.29679 14.3079 7.29679H18.3219C19.3159 7.29679 19.7011 8.58975 18.8691 9.13375L15.8093 11.1345C15.4214 11.3882 15.2586 11.8751 15.416 12.3111L16.6263 15.6635C16.9523 16.5666 15.942 17.3655 15.1384 16.84L11.6584 14.5645C11.3259 14.3471 10.8963 14.3471 10.5638 14.5645L7.0838 16.84C6.28021 17.3655 5.26991 16.5666 5.59594 15.6635L6.80625 12.3111C6.96363 11.8751 6.80084 11.3882 6.41294 11.1345L3.35309 9.13375C2.52115 8.58975 2.90635 7.29679 3.90037 7.29679H7.91436C8.33571 7.29679 8.71186 7.03268 8.85494 6.63636L10.1705 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M29.6149 2.99229C29.9328 2.11172 31.1781 2.11172 31.496 2.99229L32.8116 6.63636C32.9547 7.03268 33.3308 7.29679 33.7522 7.29679H37.7662C38.7602 7.29679 39.1454 8.58975 38.3135 9.13375L35.2536 11.1345C34.8657 11.3882 34.7029 11.8751 34.8603 12.3111L36.0706 15.6635C36.3966 16.5666 35.3863 17.3655 34.5828 16.84L31.1027 14.5645C30.7703 14.3471 30.3406 14.3471 30.0082 14.5645L26.5281 16.84C25.7245 17.3655 24.7142 16.5666 25.0403 15.6635L26.2506 12.3111C26.408 11.8751 26.2452 11.3882 25.8573 11.1345L22.7974 9.13375C21.9655 8.58975 22.3507 7.29679 23.3447 7.29679H27.3587C27.78 7.29679 28.1562 7.03268 28.2993 6.63636L29.6149 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M49.0592 2.99229C49.3771 2.11172 50.6225 2.11172 50.9404 2.99229L52.256 6.63636C52.399 7.03268 52.7752 7.29679 53.1965 7.29679H57.2105C58.2045 7.29679 58.5897 8.58975 57.7578 9.13375L54.698 11.1345C54.31 11.3882 54.1473 11.8751 54.3046 12.3111L55.515 15.6635C55.841 16.5666 54.8307 17.3655 54.0271 16.84L50.5471 14.5645C50.2146 14.3471 49.785 14.3471 49.4525 14.5645L45.9725 16.84C45.1689 17.3655 44.1586 16.5666 44.4846 15.6635L45.6949 12.3111C45.8523 11.8751 45.6895 11.3882 45.3016 11.1345L42.2418 9.13375C41.4098 8.58975 41.795 7.29679 42.789 7.29679H46.803C47.2244 7.29679 47.6005 7.03268 47.7436 6.63636L49.0592 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M68.5035 2.99229C68.8214 2.11172 70.0668 2.11172 70.3847 2.99229L71.7003 6.63636C71.8434 7.03268 72.2195 7.29679 72.6409 7.29679H76.6549C77.6489 7.29679 78.0341 8.58975 77.2021 9.13375L74.1423 11.1345C73.7544 11.3882 73.5916 11.8751 73.749 12.3111L74.9593 15.6635C75.2853 16.5666 74.275 17.3655 73.4714 16.84L69.9914 14.5645C69.6589 14.3471 69.2293 14.3471 68.8968 14.5645L65.4168 16.84C64.6132 17.3655 63.6029 16.5666 63.9289 15.6635L65.1393 12.3111C65.2966 11.8751 65.1339 11.3882 64.7459 11.1345L61.6861 9.13375C60.8542 8.58975 61.2394 7.29679 62.2334 7.29679H66.2474C66.6687 7.29679 67.0449 7.03268 67.1879 6.63636L68.5035 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M87.9479 2.99229C88.2658 2.11172 89.5111 2.11172 89.829 2.99229L91.1446 6.63636C91.2877 7.03268 91.6639 7.29679 92.0852 7.29679H96.0992C97.0932 7.29679 97.4784 8.58975 96.6465 9.13375L93.5866 11.1345C93.1987 11.3882 93.0359 11.8751 93.1933 12.3111L94.4036 15.6635C94.7297 16.5666 93.7194 17.3655 92.9158 16.84L89.4357 14.5645C89.1033 14.3471 88.6736 14.3471 88.3412 14.5645L84.8611 16.84C84.0576 17.3655 83.0473 16.5666 83.3733 15.6635L84.5836 12.3111C84.741 11.8751 84.5782 11.3882 84.1903 11.1345L81.1304 9.13375C80.2985 8.58975 80.6837 7.29679 81.6777 7.29679H85.6917C86.1131 7.29679 86.4892 7.03268 86.6323 6.63636L87.9479 2.99229Z"
+                                    fill="#555555" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 lg:col-3 mt-7 flex justify-center lg:block lg:mt-0">
+                    <!-- pro-card3 -->
+                    <div
+                        class="max-w-[312px] w-full h-full rounded-[17px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white pb-[30px]">
+                        <div class="relative overflow-hidden"><img src="./dist/images/red_shoes_related.png"
+                                alt="procard-img1">
+                            <div
+                                class="w-[117px] h-[22px] bg-[#d36b31] absolute -rotate-45 top-5 left-[-25px] flex items-center justify-center">
+                                <p class="text-white font-poppins text-[14px] font-normal leading-[34px]">-10% OFF</p>
+                            </div>
+                            <div
+                                class="w-[68px] h-[29px] rounded-tr-[14px] bg-[#555] absolute top-0 right-0 flex items-center justify-center">
+                                <p class="text-white font-poppins text-[14px] font-normal leading-[34px]">NEW</p>
+                            </div>
+                        </div>
+                        <div class="pl-[14px]">
+                            <div class="flex gap-[40px]">
+                                <div>
+                                    <h3
+                                        class="text-[#555] font-poppins text-[18px] leading-[34px] font-medium mt-[18px]">
+                                        Quickiins Mens Shoes</h3>
+                                    <p class="text-[#555] font-poppins text-[18px] font-medium leading-[34px]">
+                                        $90.00<span class="text-[#F00] ml-1">$70.00</span></p>
+                                </div>
+                                <svg class="mt-[29px] cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="49"
+                                    height="49" viewBox="0 0 49 49" fill="none">
+                                    <g clip-path="url(#clip0_776_387)">
+                                        <path
+                                            d="M24.5 0.386963C11.2452 0.386963 0.5 11.1321 0.5 24.387C0.5 37.6418 11.2452 48.387 24.5 48.387C37.7548 48.387 48.5 37.6418 48.5 24.387C48.5 11.1321 37.7548 0.386963 24.5 0.386963ZM12.4033 10.5266L16.6748 11.8684C17.2403 12.0541 17.6169 12.5792 17.6826 13.1164L17.9228 15.4689L37.2646 17.6281C38.0952 17.789 38.6788 18.5388 38.5625 19.3097L37.3613 26.0772C37.2084 26.7851 36.6222 27.2704 35.9697 27.2784H18.7871L18.4502 29.1974H34.7686C35.6218 29.2274 36.2468 29.8772 36.2568 30.6358C36.2214 31.5014 35.5238 32.0679 34.7686 32.0772H16.7217C15.8114 32.002 15.1432 31.2806 15.2832 30.3985L16.0508 26.1739L14.8496 14.3645L11.539 13.3098C11.155 13.1818 10.8668 12.9411 10.6748 12.5891C10.3115 11.8278 10.6508 10.9849 11.2988 10.6203C11.6687 10.4281 12.0299 10.4041 12.4033 10.5266ZM18.9072 32.9065C20.1499 32.9065 21.1572 33.9138 21.1572 35.1565C21.1572 36.3991 20.1499 37.4065 18.9072 37.4065C17.6647 37.4065 16.6572 36.3991 16.6572 35.1565C16.6572 33.9138 17.6646 32.9065 18.9072 32.9065ZM32.1142 32.9065C33.3568 32.9065 34.3642 33.9138 34.3642 35.1565C34.3642 36.3991 33.3568 37.4065 32.1142 37.4065C30.8716 37.4065 29.8642 36.3991 29.8642 35.1565C29.8642 33.9138 30.8716 32.9065 32.1142 32.9065Z"
+                                            fill="#28A745" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_776_387">
+                                            <rect width="48" height="48" fill="white"
+                                                transform="translate(0.5 0.386963)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <svg class="mt-[15px]" xmlns="http://www.w3.org/2000/svg" width="100" height="21"
+                                viewBox="0 0 100 21" fill="none">
+                                <path
+                                    d="M10.1705 2.99229C10.4884 2.11172 11.7338 2.11172 12.0517 2.99229L13.3673 6.63636C13.5104 7.03268 13.8865 7.29679 14.3079 7.29679H18.3219C19.3159 7.29679 19.7011 8.58975 18.8691 9.13375L15.8093 11.1345C15.4214 11.3882 15.2586 11.8751 15.416 12.3111L16.6263 15.6635C16.9523 16.5666 15.942 17.3655 15.1384 16.84L11.6584 14.5645C11.3259 14.3471 10.8963 14.3471 10.5638 14.5645L7.0838 16.84C6.28021 17.3655 5.26991 16.5666 5.59594 15.6635L6.80625 12.3111C6.96363 11.8751 6.80084 11.3882 6.41294 11.1345L3.35309 9.13375C2.52115 8.58975 2.90635 7.29679 3.90037 7.29679H7.91436C8.33571 7.29679 8.71186 7.03268 8.85494 6.63636L10.1705 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M29.6149 2.99229C29.9328 2.11172 31.1781 2.11172 31.496 2.99229L32.8116 6.63636C32.9547 7.03268 33.3308 7.29679 33.7522 7.29679H37.7662C38.7602 7.29679 39.1454 8.58975 38.3135 9.13375L35.2536 11.1345C34.8657 11.3882 34.7029 11.8751 34.8603 12.3111L36.0706 15.6635C36.3966 16.5666 35.3863 17.3655 34.5828 16.84L31.1027 14.5645C30.7703 14.3471 30.3406 14.3471 30.0082 14.5645L26.5281 16.84C25.7245 17.3655 24.7142 16.5666 25.0403 15.6635L26.2506 12.3111C26.408 11.8751 26.2452 11.3882 25.8573 11.1345L22.7974 9.13375C21.9655 8.58975 22.3507 7.29679 23.3447 7.29679H27.3587C27.78 7.29679 28.1562 7.03268 28.2993 6.63636L29.6149 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M49.0592 2.99229C49.3771 2.11172 50.6225 2.11172 50.9404 2.99229L52.256 6.63636C52.399 7.03268 52.7752 7.29679 53.1965 7.29679H57.2105C58.2045 7.29679 58.5897 8.58975 57.7578 9.13375L54.698 11.1345C54.31 11.3882 54.1473 11.8751 54.3046 12.3111L55.515 15.6635C55.841 16.5666 54.8307 17.3655 54.0271 16.84L50.5471 14.5645C50.2146 14.3471 49.785 14.3471 49.4525 14.5645L45.9725 16.84C45.1689 17.3655 44.1586 16.5666 44.4846 15.6635L45.6949 12.3111C45.8523 11.8751 45.6895 11.3882 45.3016 11.1345L42.2418 9.13375C41.4098 8.58975 41.795 7.29679 42.789 7.29679H46.803C47.2244 7.29679 47.6005 7.03268 47.7436 6.63636L49.0592 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M68.5035 2.99229C68.8214 2.11172 70.0668 2.11172 70.3847 2.99229L71.7003 6.63636C71.8434 7.03268 72.2195 7.29679 72.6409 7.29679H76.6549C77.6489 7.29679 78.0341 8.58975 77.2021 9.13375L74.1423 11.1345C73.7544 11.3882 73.5916 11.8751 73.749 12.3111L74.9593 15.6635C75.2853 16.5666 74.275 17.3655 73.4714 16.84L69.9914 14.5645C69.6589 14.3471 69.2293 14.3471 68.8968 14.5645L65.4168 16.84C64.6132 17.3655 63.6029 16.5666 63.9289 15.6635L65.1393 12.3111C65.2966 11.8751 65.1339 11.3882 64.7459 11.1345L61.6861 9.13375C60.8542 8.58975 61.2394 7.29679 62.2334 7.29679H66.2474C66.6687 7.29679 67.0449 7.03268 67.1879 6.63636L68.5035 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M87.9479 2.99229C88.2658 2.11172 89.5111 2.11172 89.829 2.99229L91.1446 6.63636C91.2877 7.03268 91.6639 7.29679 92.0852 7.29679H96.0992C97.0932 7.29679 97.4784 8.58975 96.6465 9.13375L93.5866 11.1345C93.1987 11.3882 93.0359 11.8751 93.1933 12.3111L94.4036 15.6635C94.7297 16.5666 93.7194 17.3655 92.9158 16.84L89.4357 14.5645C89.1033 14.3471 88.6736 14.3471 88.3412 14.5645L84.8611 16.84C84.0576 17.3655 83.0473 16.5666 83.3733 15.6635L84.5836 12.3111C84.741 11.8751 84.5782 11.3882 84.1903 11.1345L81.1304 9.13375C80.2985 8.58975 80.6837 7.29679 81.6777 7.29679H85.6917C86.1131 7.29679 86.4892 7.03268 86.6323 6.63636L87.9479 2.99229Z"
+                                    fill="#555555" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 lg:col-3 mt-7 flex justify-center lg:block lg:mt-0">
+                    <!-- pro-card4 -->
+                    <div
+                        class="max-w-[312px] w-full h-full rounded-[17px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white pb-[30px]">
+                        <div class="relative overflow-hidden"><img src="./dist/images/grey_shoes_related.png"
+                                alt="procard-img1">
+                            <div
+                                class="w-[117px] h-[22px] bg-[#d36b31] absolute -rotate-45 top-5 left-[-25px] flex items-center justify-center">
+                                <p class="text-white font-poppins text-[14px] font-normal leading-[34px]">-10% OFF</p>
+                            </div>
+                            <div
+                                class="w-[68px] h-[29px] rounded-tr-[14px] bg-[#555] absolute top-0 right-0 flex items-center justify-center">
+                                <p class="text-white font-poppins text-[14px] font-normal leading-[34px]">NEW</p>
+                            </div>
+                        </div>
+                        <div class="pl-[14px]">
+                            <div class="flex gap-[40px]">
+                                <div>
+                                    <h3
+                                        class="text-[#555] font-poppins text-[18px] leading-[34px] font-medium mt-[18px]">
+                                        Quickiins Mens Shoes</h3>
+                                    <p class="text-[#555] font-poppins text-[18px] font-medium leading-[34px]">
+                                        $90.00<span class="text-[#F00] ml-1">$70.00</span></p>
+                                </div>
+                                <svg class="mt-[29px] cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="49"
+                                    height="49" viewBox="0 0 49 49" fill="none">
+                                    <g clip-path="url(#clip0_776_387)">
+                                        <path
+                                            d="M24.5 0.386963C11.2452 0.386963 0.5 11.1321 0.5 24.387C0.5 37.6418 11.2452 48.387 24.5 48.387C37.7548 48.387 48.5 37.6418 48.5 24.387C48.5 11.1321 37.7548 0.386963 24.5 0.386963ZM12.4033 10.5266L16.6748 11.8684C17.2403 12.0541 17.6169 12.5792 17.6826 13.1164L17.9228 15.4689L37.2646 17.6281C38.0952 17.789 38.6788 18.5388 38.5625 19.3097L37.3613 26.0772C37.2084 26.7851 36.6222 27.2704 35.9697 27.2784H18.7871L18.4502 29.1974H34.7686C35.6218 29.2274 36.2468 29.8772 36.2568 30.6358C36.2214 31.5014 35.5238 32.0679 34.7686 32.0772H16.7217C15.8114 32.002 15.1432 31.2806 15.2832 30.3985L16.0508 26.1739L14.8496 14.3645L11.539 13.3098C11.155 13.1818 10.8668 12.9411 10.6748 12.5891C10.3115 11.8278 10.6508 10.9849 11.2988 10.6203C11.6687 10.4281 12.0299 10.4041 12.4033 10.5266ZM18.9072 32.9065C20.1499 32.9065 21.1572 33.9138 21.1572 35.1565C21.1572 36.3991 20.1499 37.4065 18.9072 37.4065C17.6647 37.4065 16.6572 36.3991 16.6572 35.1565C16.6572 33.9138 17.6646 32.9065 18.9072 32.9065ZM32.1142 32.9065C33.3568 32.9065 34.3642 33.9138 34.3642 35.1565C34.3642 36.3991 33.3568 37.4065 32.1142 37.4065C30.8716 37.4065 29.8642 36.3991 29.8642 35.1565C29.8642 33.9138 30.8716 32.9065 32.1142 32.9065Z"
+                                            fill="#28A745" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_776_387">
+                                            <rect width="48" height="48" fill="white"
+                                                transform="translate(0.5 0.386963)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <svg class="mt-[15px]" xmlns="http://www.w3.org/2000/svg" width="100" height="21"
+                                viewBox="0 0 100 21" fill="none">
+                                <path
+                                    d="M10.1705 2.99229C10.4884 2.11172 11.7338 2.11172 12.0517 2.99229L13.3673 6.63636C13.5104 7.03268 13.8865 7.29679 14.3079 7.29679H18.3219C19.3159 7.29679 19.7011 8.58975 18.8691 9.13375L15.8093 11.1345C15.4214 11.3882 15.2586 11.8751 15.416 12.3111L16.6263 15.6635C16.9523 16.5666 15.942 17.3655 15.1384 16.84L11.6584 14.5645C11.3259 14.3471 10.8963 14.3471 10.5638 14.5645L7.0838 16.84C6.28021 17.3655 5.26991 16.5666 5.59594 15.6635L6.80625 12.3111C6.96363 11.8751 6.80084 11.3882 6.41294 11.1345L3.35309 9.13375C2.52115 8.58975 2.90635 7.29679 3.90037 7.29679H7.91436C8.33571 7.29679 8.71186 7.03268 8.85494 6.63636L10.1705 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M29.6149 2.99229C29.9328 2.11172 31.1781 2.11172 31.496 2.99229L32.8116 6.63636C32.9547 7.03268 33.3308 7.29679 33.7522 7.29679H37.7662C38.7602 7.29679 39.1454 8.58975 38.3135 9.13375L35.2536 11.1345C34.8657 11.3882 34.7029 11.8751 34.8603 12.3111L36.0706 15.6635C36.3966 16.5666 35.3863 17.3655 34.5828 16.84L31.1027 14.5645C30.7703 14.3471 30.3406 14.3471 30.0082 14.5645L26.5281 16.84C25.7245 17.3655 24.7142 16.5666 25.0403 15.6635L26.2506 12.3111C26.408 11.8751 26.2452 11.3882 25.8573 11.1345L22.7974 9.13375C21.9655 8.58975 22.3507 7.29679 23.3447 7.29679H27.3587C27.78 7.29679 28.1562 7.03268 28.2993 6.63636L29.6149 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M49.0592 2.99229C49.3771 2.11172 50.6225 2.11172 50.9404 2.99229L52.256 6.63636C52.399 7.03268 52.7752 7.29679 53.1965 7.29679H57.2105C58.2045 7.29679 58.5897 8.58975 57.7578 9.13375L54.698 11.1345C54.31 11.3882 54.1473 11.8751 54.3046 12.3111L55.515 15.6635C55.841 16.5666 54.8307 17.3655 54.0271 16.84L50.5471 14.5645C50.2146 14.3471 49.785 14.3471 49.4525 14.5645L45.9725 16.84C45.1689 17.3655 44.1586 16.5666 44.4846 15.6635L45.6949 12.3111C45.8523 11.8751 45.6895 11.3882 45.3016 11.1345L42.2418 9.13375C41.4098 8.58975 41.795 7.29679 42.789 7.29679H46.803C47.2244 7.29679 47.6005 7.03268 47.7436 6.63636L49.0592 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M68.5035 2.99229C68.8214 2.11172 70.0668 2.11172 70.3847 2.99229L71.7003 6.63636C71.8434 7.03268 72.2195 7.29679 72.6409 7.29679H76.6549C77.6489 7.29679 78.0341 8.58975 77.2021 9.13375L74.1423 11.1345C73.7544 11.3882 73.5916 11.8751 73.749 12.3111L74.9593 15.6635C75.2853 16.5666 74.275 17.3655 73.4714 16.84L69.9914 14.5645C69.6589 14.3471 69.2293 14.3471 68.8968 14.5645L65.4168 16.84C64.6132 17.3655 63.6029 16.5666 63.9289 15.6635L65.1393 12.3111C65.2966 11.8751 65.1339 11.3882 64.7459 11.1345L61.6861 9.13375C60.8542 8.58975 61.2394 7.29679 62.2334 7.29679H66.2474C66.6687 7.29679 67.0449 7.03268 67.1879 6.63636L68.5035 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M87.9479 2.99229C88.2658 2.11172 89.5111 2.11172 89.829 2.99229L91.1446 6.63636C91.2877 7.03268 91.6639 7.29679 92.0852 7.29679H96.0992C97.0932 7.29679 97.4784 8.58975 96.6465 9.13375L93.5866 11.1345C93.1987 11.3882 93.0359 11.8751 93.1933 12.3111L94.4036 15.6635C94.7297 16.5666 93.7194 17.3655 92.9158 16.84L89.4357 14.5645C89.1033 14.3471 88.6736 14.3471 88.3412 14.5645L84.8611 16.84C84.0576 17.3655 83.0473 16.5666 83.3733 15.6635L84.5836 12.3111C84.741 11.8751 84.5782 11.3882 84.1903 11.1345L81.1304 9.13375C80.2985 8.58975 80.6837 7.29679 81.6777 7.29679H85.6917C86.1131 7.29679 86.4892 7.03268 86.6323 6.63636L87.9479 2.99229Z"
+                                    fill="#555555" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row lg:mt-[40px]">
+                <div class="col-12 md:col-6 lg:col-3 mt-7 flex justify-center lg:block lg:mt-0">
+                    <!-- pro-card5 -->
+                    <div
+                        class="max-w-[312px] w-full h-full rounded-[17px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white pb-[30px]">
+                        <div class="relative overflow-hidden"><img src="./dist/images/red_shoes_related.png"
+                                alt="procard-img1">
+                            <div
+                                class="w-[117px] h-[22px] bg-[#d36b31] absolute -rotate-45 top-5 left-[-25px] flex items-center justify-center">
+                                <p class="text-white font-poppins text-[14px] font-normal leading-[34px]">-10% OFF</p>
+                            </div>
+                            <div
+                                class="w-[68px] h-[29px] rounded-tr-[14px] bg-[#555] absolute top-0 right-0 flex items-center justify-center">
+                                <p class="text-white font-poppins text-[14px] font-normal leading-[34px]">NEW</p>
+                            </div>
+                        </div>
+                        <div class="pl-[14px]">
+                            <div class="flex gap-[40px]">
+                                <div>
+                                    <h3
+                                        class="text-[#555] font-poppins text-[18px] leading-[34px] font-medium mt-[18px]">
+                                        Quickiins Mens Shoes</h3>
+                                    <p class="text-[#555] font-poppins text-[18px] font-medium leading-[34px]">
+                                        $90.00<span class="text-[#F00] ml-1">$70.00</span></p>
+                                </div>
+                                <svg class="mt-[29px] cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="49"
+                                    height="49" viewBox="0 0 49 49" fill="none">
+                                    <g clip-path="url(#clip0_776_387)">
+                                        <path
+                                            d="M24.5 0.386963C11.2452 0.386963 0.5 11.1321 0.5 24.387C0.5 37.6418 11.2452 48.387 24.5 48.387C37.7548 48.387 48.5 37.6418 48.5 24.387C48.5 11.1321 37.7548 0.386963 24.5 0.386963ZM12.4033 10.5266L16.6748 11.8684C17.2403 12.0541 17.6169 12.5792 17.6826 13.1164L17.9228 15.4689L37.2646 17.6281C38.0952 17.789 38.6788 18.5388 38.5625 19.3097L37.3613 26.0772C37.2084 26.7851 36.6222 27.2704 35.9697 27.2784H18.7871L18.4502 29.1974H34.7686C35.6218 29.2274 36.2468 29.8772 36.2568 30.6358C36.2214 31.5014 35.5238 32.0679 34.7686 32.0772H16.7217C15.8114 32.002 15.1432 31.2806 15.2832 30.3985L16.0508 26.1739L14.8496 14.3645L11.539 13.3098C11.155 13.1818 10.8668 12.9411 10.6748 12.5891C10.3115 11.8278 10.6508 10.9849 11.2988 10.6203C11.6687 10.4281 12.0299 10.4041 12.4033 10.5266ZM18.9072 32.9065C20.1499 32.9065 21.1572 33.9138 21.1572 35.1565C21.1572 36.3991 20.1499 37.4065 18.9072 37.4065C17.6647 37.4065 16.6572 36.3991 16.6572 35.1565C16.6572 33.9138 17.6646 32.9065 18.9072 32.9065ZM32.1142 32.9065C33.3568 32.9065 34.3642 33.9138 34.3642 35.1565C34.3642 36.3991 33.3568 37.4065 32.1142 37.4065C30.8716 37.4065 29.8642 36.3991 29.8642 35.1565C29.8642 33.9138 30.8716 32.9065 32.1142 32.9065Z"
+                                            fill="#28A745" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_776_387">
+                                            <rect width="48" height="48" fill="white"
+                                                transform="translate(0.5 0.386963)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <svg class="mt-[15px]" xmlns="http://www.w3.org/2000/svg" width="100" height="21"
+                                viewBox="0 0 100 21" fill="none">
+                                <path
+                                    d="M10.1705 2.99229C10.4884 2.11172 11.7338 2.11172 12.0517 2.99229L13.3673 6.63636C13.5104 7.03268 13.8865 7.29679 14.3079 7.29679H18.3219C19.3159 7.29679 19.7011 8.58975 18.8691 9.13375L15.8093 11.1345C15.4214 11.3882 15.2586 11.8751 15.416 12.3111L16.6263 15.6635C16.9523 16.5666 15.942 17.3655 15.1384 16.84L11.6584 14.5645C11.3259 14.3471 10.8963 14.3471 10.5638 14.5645L7.0838 16.84C6.28021 17.3655 5.26991 16.5666 5.59594 15.6635L6.80625 12.3111C6.96363 11.8751 6.80084 11.3882 6.41294 11.1345L3.35309 9.13375C2.52115 8.58975 2.90635 7.29679 3.90037 7.29679H7.91436C8.33571 7.29679 8.71186 7.03268 8.85494 6.63636L10.1705 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M29.6149 2.99229C29.9328 2.11172 31.1781 2.11172 31.496 2.99229L32.8116 6.63636C32.9547 7.03268 33.3308 7.29679 33.7522 7.29679H37.7662C38.7602 7.29679 39.1454 8.58975 38.3135 9.13375L35.2536 11.1345C34.8657 11.3882 34.7029 11.8751 34.8603 12.3111L36.0706 15.6635C36.3966 16.5666 35.3863 17.3655 34.5828 16.84L31.1027 14.5645C30.7703 14.3471 30.3406 14.3471 30.0082 14.5645L26.5281 16.84C25.7245 17.3655 24.7142 16.5666 25.0403 15.6635L26.2506 12.3111C26.408 11.8751 26.2452 11.3882 25.8573 11.1345L22.7974 9.13375C21.9655 8.58975 22.3507 7.29679 23.3447 7.29679H27.3587C27.78 7.29679 28.1562 7.03268 28.2993 6.63636L29.6149 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M49.0592 2.99229C49.3771 2.11172 50.6225 2.11172 50.9404 2.99229L52.256 6.63636C52.399 7.03268 52.7752 7.29679 53.1965 7.29679H57.2105C58.2045 7.29679 58.5897 8.58975 57.7578 9.13375L54.698 11.1345C54.31 11.3882 54.1473 11.8751 54.3046 12.3111L55.515 15.6635C55.841 16.5666 54.8307 17.3655 54.0271 16.84L50.5471 14.5645C50.2146 14.3471 49.785 14.3471 49.4525 14.5645L45.9725 16.84C45.1689 17.3655 44.1586 16.5666 44.4846 15.6635L45.6949 12.3111C45.8523 11.8751 45.6895 11.3882 45.3016 11.1345L42.2418 9.13375C41.4098 8.58975 41.795 7.29679 42.789 7.29679H46.803C47.2244 7.29679 47.6005 7.03268 47.7436 6.63636L49.0592 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M68.5035 2.99229C68.8214 2.11172 70.0668 2.11172 70.3847 2.99229L71.7003 6.63636C71.8434 7.03268 72.2195 7.29679 72.6409 7.29679H76.6549C77.6489 7.29679 78.0341 8.58975 77.2021 9.13375L74.1423 11.1345C73.7544 11.3882 73.5916 11.8751 73.749 12.3111L74.9593 15.6635C75.2853 16.5666 74.275 17.3655 73.4714 16.84L69.9914 14.5645C69.6589 14.3471 69.2293 14.3471 68.8968 14.5645L65.4168 16.84C64.6132 17.3655 63.6029 16.5666 63.9289 15.6635L65.1393 12.3111C65.2966 11.8751 65.1339 11.3882 64.7459 11.1345L61.6861 9.13375C60.8542 8.58975 61.2394 7.29679 62.2334 7.29679H66.2474C66.6687 7.29679 67.0449 7.03268 67.1879 6.63636L68.5035 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M87.9479 2.99229C88.2658 2.11172 89.5111 2.11172 89.829 2.99229L91.1446 6.63636C91.2877 7.03268 91.6639 7.29679 92.0852 7.29679H96.0992C97.0932 7.29679 97.4784 8.58975 96.6465 9.13375L93.5866 11.1345C93.1987 11.3882 93.0359 11.8751 93.1933 12.3111L94.4036 15.6635C94.7297 16.5666 93.7194 17.3655 92.9158 16.84L89.4357 14.5645C89.1033 14.3471 88.6736 14.3471 88.3412 14.5645L84.8611 16.84C84.0576 17.3655 83.0473 16.5666 83.3733 15.6635L84.5836 12.3111C84.741 11.8751 84.5782 11.3882 84.1903 11.1345L81.1304 9.13375C80.2985 8.58975 80.6837 7.29679 81.6777 7.29679H85.6917C86.1131 7.29679 86.4892 7.03268 86.6323 6.63636L87.9479 2.99229Z"
+                                    fill="#555555" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 lg:col-3 mt-7 flex justify-center lg:block lg:mt-0">
+                    <!-- pro-card -->
+                    <div
+                        class="max-w-[312px] w-full h-full rounded-[17px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white pb-[30px]">
+                        <div class="relative overflow-hidden"><img src="./dist/images/grey_shoes_related.png"
+                                alt="procard-img1">
+                            <div
+                                class="w-[117px] h-[22px] bg-[#d36b31] absolute -rotate-45 top-5 left-[-25px] flex items-center justify-center">
+                                <p class="text-white font-poppins text-[14px] font-normal leading-[34px]">-10% OFF</p>
+                            </div>
+                            <div
+                                class="w-[68px] h-[29px] rounded-tr-[14px] bg-[#555] absolute top-0 right-0 flex items-center justify-center">
+                                <p class="text-white font-poppins text-[14px] font-normal leading-[34px]">NEW</p>
+                            </div>
+                        </div>
+                        <div class="pl-[14px]">
+                            <div class="flex gap-[40px]">
+                                <div>
+                                    <h3
+                                        class="text-[#555] font-poppins text-[18px] leading-[34px] font-medium mt-[18px]">
+                                        Quickiins Mens Shoes</h3>
+                                    <p class="text-[#555] font-poppins text-[18px] font-medium leading-[34px]">
+                                        $90.00<span class="text-[#F00] ml-1">$70.00</span></p>
+                                </div>
+                                <svg class="mt-[29px] cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="49"
+                                    height="49" viewBox="0 0 49 49" fill="none">
+                                    <g clip-path="url(#clip0_776_387)">
+                                        <path
+                                            d="M24.5 0.386963C11.2452 0.386963 0.5 11.1321 0.5 24.387C0.5 37.6418 11.2452 48.387 24.5 48.387C37.7548 48.387 48.5 37.6418 48.5 24.387C48.5 11.1321 37.7548 0.386963 24.5 0.386963ZM12.4033 10.5266L16.6748 11.8684C17.2403 12.0541 17.6169 12.5792 17.6826 13.1164L17.9228 15.4689L37.2646 17.6281C38.0952 17.789 38.6788 18.5388 38.5625 19.3097L37.3613 26.0772C37.2084 26.7851 36.6222 27.2704 35.9697 27.2784H18.7871L18.4502 29.1974H34.7686C35.6218 29.2274 36.2468 29.8772 36.2568 30.6358C36.2214 31.5014 35.5238 32.0679 34.7686 32.0772H16.7217C15.8114 32.002 15.1432 31.2806 15.2832 30.3985L16.0508 26.1739L14.8496 14.3645L11.539 13.3098C11.155 13.1818 10.8668 12.9411 10.6748 12.5891C10.3115 11.8278 10.6508 10.9849 11.2988 10.6203C11.6687 10.4281 12.0299 10.4041 12.4033 10.5266ZM18.9072 32.9065C20.1499 32.9065 21.1572 33.9138 21.1572 35.1565C21.1572 36.3991 20.1499 37.4065 18.9072 37.4065C17.6647 37.4065 16.6572 36.3991 16.6572 35.1565C16.6572 33.9138 17.6646 32.9065 18.9072 32.9065ZM32.1142 32.9065C33.3568 32.9065 34.3642 33.9138 34.3642 35.1565C34.3642 36.3991 33.3568 37.4065 32.1142 37.4065C30.8716 37.4065 29.8642 36.3991 29.8642 35.1565C29.8642 33.9138 30.8716 32.9065 32.1142 32.9065Z"
+                                            fill="#28A745" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_776_387">
+                                            <rect width="48" height="48" fill="white"
+                                                transform="translate(0.5 0.386963)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <svg class="mt-[15px]" xmlns="http://www.w3.org/2000/svg" width="100" height="21"
+                                viewBox="0 0 100 21" fill="none">
+                                <path
+                                    d="M10.1705 2.99229C10.4884 2.11172 11.7338 2.11172 12.0517 2.99229L13.3673 6.63636C13.5104 7.03268 13.8865 7.29679 14.3079 7.29679H18.3219C19.3159 7.29679 19.7011 8.58975 18.8691 9.13375L15.8093 11.1345C15.4214 11.3882 15.2586 11.8751 15.416 12.3111L16.6263 15.6635C16.9523 16.5666 15.942 17.3655 15.1384 16.84L11.6584 14.5645C11.3259 14.3471 10.8963 14.3471 10.5638 14.5645L7.0838 16.84C6.28021 17.3655 5.26991 16.5666 5.59594 15.6635L6.80625 12.3111C6.96363 11.8751 6.80084 11.3882 6.41294 11.1345L3.35309 9.13375C2.52115 8.58975 2.90635 7.29679 3.90037 7.29679H7.91436C8.33571 7.29679 8.71186 7.03268 8.85494 6.63636L10.1705 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M29.6149 2.99229C29.9328 2.11172 31.1781 2.11172 31.496 2.99229L32.8116 6.63636C32.9547 7.03268 33.3308 7.29679 33.7522 7.29679H37.7662C38.7602 7.29679 39.1454 8.58975 38.3135 9.13375L35.2536 11.1345C34.8657 11.3882 34.7029 11.8751 34.8603 12.3111L36.0706 15.6635C36.3966 16.5666 35.3863 17.3655 34.5828 16.84L31.1027 14.5645C30.7703 14.3471 30.3406 14.3471 30.0082 14.5645L26.5281 16.84C25.7245 17.3655 24.7142 16.5666 25.0403 15.6635L26.2506 12.3111C26.408 11.8751 26.2452 11.3882 25.8573 11.1345L22.7974 9.13375C21.9655 8.58975 22.3507 7.29679 23.3447 7.29679H27.3587C27.78 7.29679 28.1562 7.03268 28.2993 6.63636L29.6149 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M49.0592 2.99229C49.3771 2.11172 50.6225 2.11172 50.9404 2.99229L52.256 6.63636C52.399 7.03268 52.7752 7.29679 53.1965 7.29679H57.2105C58.2045 7.29679 58.5897 8.58975 57.7578 9.13375L54.698 11.1345C54.31 11.3882 54.1473 11.8751 54.3046 12.3111L55.515 15.6635C55.841 16.5666 54.8307 17.3655 54.0271 16.84L50.5471 14.5645C50.2146 14.3471 49.785 14.3471 49.4525 14.5645L45.9725 16.84C45.1689 17.3655 44.1586 16.5666 44.4846 15.6635L45.6949 12.3111C45.8523 11.8751 45.6895 11.3882 45.3016 11.1345L42.2418 9.13375C41.4098 8.58975 41.795 7.29679 42.789 7.29679H46.803C47.2244 7.29679 47.6005 7.03268 47.7436 6.63636L49.0592 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M68.5035 2.99229C68.8214 2.11172 70.0668 2.11172 70.3847 2.99229L71.7003 6.63636C71.8434 7.03268 72.2195 7.29679 72.6409 7.29679H76.6549C77.6489 7.29679 78.0341 8.58975 77.2021 9.13375L74.1423 11.1345C73.7544 11.3882 73.5916 11.8751 73.749 12.3111L74.9593 15.6635C75.2853 16.5666 74.275 17.3655 73.4714 16.84L69.9914 14.5645C69.6589 14.3471 69.2293 14.3471 68.8968 14.5645L65.4168 16.84C64.6132 17.3655 63.6029 16.5666 63.9289 15.6635L65.1393 12.3111C65.2966 11.8751 65.1339 11.3882 64.7459 11.1345L61.6861 9.13375C60.8542 8.58975 61.2394 7.29679 62.2334 7.29679H66.2474C66.6687 7.29679 67.0449 7.03268 67.1879 6.63636L68.5035 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M87.9479 2.99229C88.2658 2.11172 89.5111 2.11172 89.829 2.99229L91.1446 6.63636C91.2877 7.03268 91.6639 7.29679 92.0852 7.29679H96.0992C97.0932 7.29679 97.4784 8.58975 96.6465 9.13375L93.5866 11.1345C93.1987 11.3882 93.0359 11.8751 93.1933 12.3111L94.4036 15.6635C94.7297 16.5666 93.7194 17.3655 92.9158 16.84L89.4357 14.5645C89.1033 14.3471 88.6736 14.3471 88.3412 14.5645L84.8611 16.84C84.0576 17.3655 83.0473 16.5666 83.3733 15.6635L84.5836 12.3111C84.741 11.8751 84.5782 11.3882 84.1903 11.1345L81.1304 9.13375C80.2985 8.58975 80.6837 7.29679 81.6777 7.29679H85.6917C86.1131 7.29679 86.4892 7.03268 86.6323 6.63636L87.9479 2.99229Z"
+                                    fill="#555555" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 lg:col-3 mt-7 flex justify-center lg:block lg:mt-0">
+                    <!-- pro-card -->
+                    <div
+                        class="max-w-[312px] w-full h-full rounded-[17px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white pb-[30px]">
+                        <div class="relative overflow-hidden"><img src="./dist/images/red_shoes_related.png"
+                                alt="procard-img1">
+                            <div
+                                class="w-[117px] h-[22px] bg-[#d36b31] absolute -rotate-45 top-5 left-[-25px] flex items-center justify-center">
+                                <p class="text-white font-poppins text-[14px] font-normal leading-[34px]">-10% OFF</p>
+                            </div>
+                            <div
+                                class="w-[68px] h-[29px] rounded-tr-[14px] bg-[#555] absolute top-0 right-0 flex items-center justify-center">
+                                <p class="text-white font-poppins text-[14px] font-normal leading-[34px]">NEW</p>
+                            </div>
+                        </div>
+                        <div class="pl-[14px]">
+                            <div class="flex gap-[40px]">
+                                <div>
+                                    <h3
+                                        class="text-[#555] font-poppins text-[18px] leading-[34px] font-medium mt-[18px]">
+                                        Quickiins Mens Shoes</h3>
+                                    <p class="text-[#555] font-poppins text-[18px] font-medium leading-[34px]">
+                                        $90.00<span class="text-[#F00] ml-1">$70.00</span></p>
+                                </div>
+                                <svg class="mt-[29px] cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="49"
+                                    height="49" viewBox="0 0 49 49" fill="none">
+                                    <g clip-path="url(#clip0_776_387)">
+                                        <path
+                                            d="M24.5 0.386963C11.2452 0.386963 0.5 11.1321 0.5 24.387C0.5 37.6418 11.2452 48.387 24.5 48.387C37.7548 48.387 48.5 37.6418 48.5 24.387C48.5 11.1321 37.7548 0.386963 24.5 0.386963ZM12.4033 10.5266L16.6748 11.8684C17.2403 12.0541 17.6169 12.5792 17.6826 13.1164L17.9228 15.4689L37.2646 17.6281C38.0952 17.789 38.6788 18.5388 38.5625 19.3097L37.3613 26.0772C37.2084 26.7851 36.6222 27.2704 35.9697 27.2784H18.7871L18.4502 29.1974H34.7686C35.6218 29.2274 36.2468 29.8772 36.2568 30.6358C36.2214 31.5014 35.5238 32.0679 34.7686 32.0772H16.7217C15.8114 32.002 15.1432 31.2806 15.2832 30.3985L16.0508 26.1739L14.8496 14.3645L11.539 13.3098C11.155 13.1818 10.8668 12.9411 10.6748 12.5891C10.3115 11.8278 10.6508 10.9849 11.2988 10.6203C11.6687 10.4281 12.0299 10.4041 12.4033 10.5266ZM18.9072 32.9065C20.1499 32.9065 21.1572 33.9138 21.1572 35.1565C21.1572 36.3991 20.1499 37.4065 18.9072 37.4065C17.6647 37.4065 16.6572 36.3991 16.6572 35.1565C16.6572 33.9138 17.6646 32.9065 18.9072 32.9065ZM32.1142 32.9065C33.3568 32.9065 34.3642 33.9138 34.3642 35.1565C34.3642 36.3991 33.3568 37.4065 32.1142 37.4065C30.8716 37.4065 29.8642 36.3991 29.8642 35.1565C29.8642 33.9138 30.8716 32.9065 32.1142 32.9065Z"
+                                            fill="#28A745" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_776_387">
+                                            <rect width="48" height="48" fill="white"
+                                                transform="translate(0.5 0.386963)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <svg class="mt-[15px]" xmlns="http://www.w3.org/2000/svg" width="100" height="21"
+                                viewBox="0 0 100 21" fill="none">
+                                <path
+                                    d="M10.1705 2.99229C10.4884 2.11172 11.7338 2.11172 12.0517 2.99229L13.3673 6.63636C13.5104 7.03268 13.8865 7.29679 14.3079 7.29679H18.3219C19.3159 7.29679 19.7011 8.58975 18.8691 9.13375L15.8093 11.1345C15.4214 11.3882 15.2586 11.8751 15.416 12.3111L16.6263 15.6635C16.9523 16.5666 15.942 17.3655 15.1384 16.84L11.6584 14.5645C11.3259 14.3471 10.8963 14.3471 10.5638 14.5645L7.0838 16.84C6.28021 17.3655 5.26991 16.5666 5.59594 15.6635L6.80625 12.3111C6.96363 11.8751 6.80084 11.3882 6.41294 11.1345L3.35309 9.13375C2.52115 8.58975 2.90635 7.29679 3.90037 7.29679H7.91436C8.33571 7.29679 8.71186 7.03268 8.85494 6.63636L10.1705 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M29.6149 2.99229C29.9328 2.11172 31.1781 2.11172 31.496 2.99229L32.8116 6.63636C32.9547 7.03268 33.3308 7.29679 33.7522 7.29679H37.7662C38.7602 7.29679 39.1454 8.58975 38.3135 9.13375L35.2536 11.1345C34.8657 11.3882 34.7029 11.8751 34.8603 12.3111L36.0706 15.6635C36.3966 16.5666 35.3863 17.3655 34.5828 16.84L31.1027 14.5645C30.7703 14.3471 30.3406 14.3471 30.0082 14.5645L26.5281 16.84C25.7245 17.3655 24.7142 16.5666 25.0403 15.6635L26.2506 12.3111C26.408 11.8751 26.2452 11.3882 25.8573 11.1345L22.7974 9.13375C21.9655 8.58975 22.3507 7.29679 23.3447 7.29679H27.3587C27.78 7.29679 28.1562 7.03268 28.2993 6.63636L29.6149 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M49.0592 2.99229C49.3771 2.11172 50.6225 2.11172 50.9404 2.99229L52.256 6.63636C52.399 7.03268 52.7752 7.29679 53.1965 7.29679H57.2105C58.2045 7.29679 58.5897 8.58975 57.7578 9.13375L54.698 11.1345C54.31 11.3882 54.1473 11.8751 54.3046 12.3111L55.515 15.6635C55.841 16.5666 54.8307 17.3655 54.0271 16.84L50.5471 14.5645C50.2146 14.3471 49.785 14.3471 49.4525 14.5645L45.9725 16.84C45.1689 17.3655 44.1586 16.5666 44.4846 15.6635L45.6949 12.3111C45.8523 11.8751 45.6895 11.3882 45.3016 11.1345L42.2418 9.13375C41.4098 8.58975 41.795 7.29679 42.789 7.29679H46.803C47.2244 7.29679 47.6005 7.03268 47.7436 6.63636L49.0592 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M68.5035 2.99229C68.8214 2.11172 70.0668 2.11172 70.3847 2.99229L71.7003 6.63636C71.8434 7.03268 72.2195 7.29679 72.6409 7.29679H76.6549C77.6489 7.29679 78.0341 8.58975 77.2021 9.13375L74.1423 11.1345C73.7544 11.3882 73.5916 11.8751 73.749 12.3111L74.9593 15.6635C75.2853 16.5666 74.275 17.3655 73.4714 16.84L69.9914 14.5645C69.6589 14.3471 69.2293 14.3471 68.8968 14.5645L65.4168 16.84C64.6132 17.3655 63.6029 16.5666 63.9289 15.6635L65.1393 12.3111C65.2966 11.8751 65.1339 11.3882 64.7459 11.1345L61.6861 9.13375C60.8542 8.58975 61.2394 7.29679 62.2334 7.29679H66.2474C66.6687 7.29679 67.0449 7.03268 67.1879 6.63636L68.5035 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M87.9479 2.99229C88.2658 2.11172 89.5111 2.11172 89.829 2.99229L91.1446 6.63636C91.2877 7.03268 91.6639 7.29679 92.0852 7.29679H96.0992C97.0932 7.29679 97.4784 8.58975 96.6465 9.13375L93.5866 11.1345C93.1987 11.3882 93.0359 11.8751 93.1933 12.3111L94.4036 15.6635C94.7297 16.5666 93.7194 17.3655 92.9158 16.84L89.4357 14.5645C89.1033 14.3471 88.6736 14.3471 88.3412 14.5645L84.8611 16.84C84.0576 17.3655 83.0473 16.5666 83.3733 15.6635L84.5836 12.3111C84.741 11.8751 84.5782 11.3882 84.1903 11.1345L81.1304 9.13375C80.2985 8.58975 80.6837 7.29679 81.6777 7.29679H85.6917C86.1131 7.29679 86.4892 7.03268 86.6323 6.63636L87.9479 2.99229Z"
+                                    fill="#555555" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6 lg:col-3 mt-7 flex justify-center lg:block lg:mt-0">
+                    <!-- pro-card -->
+                    <div
+                        class="max-w-[312px] w-full h-full rounded-[17px] border-[1px] border-[rgba(0, 0, 0, 0.12)] bg-white pb-[30px]">
+                        <div class="relative overflow-hidden"><img src="./dist/images/grey_shoes_related.png"
+                                alt="procard-img1">
+                            <div
+                                class="w-[117px] h-[22px] bg-[#d36b31] absolute -rotate-45 top-5 left-[-25px] flex items-center justify-center">
+                                <p class="text-white font-poppins text-[14px] font-normal leading-[34px]">-10% OFF</p>
+                            </div>
+                            <div
+                                class="w-[68px] h-[29px] rounded-tr-[14px] bg-[#555] absolute top-0 right-0 flex items-center justify-center">
+                                <p class="text-white font-poppins text-[14px] font-normal leading-[34px]">NEW</p>
+                            </div>
+                        </div>
+                        <div class="pl-[14px]">
+                            <div class="flex gap-[40px]">
+                                <div>
+                                    <h3
+                                        class="text-[#555] font-poppins text-[18px] leading-[34px] font-medium mt-[18px]">
+                                        Quickiins Mens Shoes</h3>
+                                    <p class="text-[#555] font-poppins text-[18px] font-medium leading-[34px]">
+                                        $90.00<span class="text-[#F00] ml-1">$70.00</span></p>
+                                </div>
+                                <svg class="mt-[29px] cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="49"
+                                    height="49" viewBox="0 0 49 49" fill="none">
+                                    <g clip-path="url(#clip0_776_387)">
+                                        <path
+                                            d="M24.5 0.386963C11.2452 0.386963 0.5 11.1321 0.5 24.387C0.5 37.6418 11.2452 48.387 24.5 48.387C37.7548 48.387 48.5 37.6418 48.5 24.387C48.5 11.1321 37.7548 0.386963 24.5 0.386963ZM12.4033 10.5266L16.6748 11.8684C17.2403 12.0541 17.6169 12.5792 17.6826 13.1164L17.9228 15.4689L37.2646 17.6281C38.0952 17.789 38.6788 18.5388 38.5625 19.3097L37.3613 26.0772C37.2084 26.7851 36.6222 27.2704 35.9697 27.2784H18.7871L18.4502 29.1974H34.7686C35.6218 29.2274 36.2468 29.8772 36.2568 30.6358C36.2214 31.5014 35.5238 32.0679 34.7686 32.0772H16.7217C15.8114 32.002 15.1432 31.2806 15.2832 30.3985L16.0508 26.1739L14.8496 14.3645L11.539 13.3098C11.155 13.1818 10.8668 12.9411 10.6748 12.5891C10.3115 11.8278 10.6508 10.9849 11.2988 10.6203C11.6687 10.4281 12.0299 10.4041 12.4033 10.5266ZM18.9072 32.9065C20.1499 32.9065 21.1572 33.9138 21.1572 35.1565C21.1572 36.3991 20.1499 37.4065 18.9072 37.4065C17.6647 37.4065 16.6572 36.3991 16.6572 35.1565C16.6572 33.9138 17.6646 32.9065 18.9072 32.9065ZM32.1142 32.9065C33.3568 32.9065 34.3642 33.9138 34.3642 35.1565C34.3642 36.3991 33.3568 37.4065 32.1142 37.4065C30.8716 37.4065 29.8642 36.3991 29.8642 35.1565C29.8642 33.9138 30.8716 32.9065 32.1142 32.9065Z"
+                                            fill="#28A745" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_776_387">
+                                            <rect width="48" height="48" fill="white"
+                                                transform="translate(0.5 0.386963)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <svg class="mt-[15px]" xmlns="http://www.w3.org/2000/svg" width="100" height="21"
+                                viewBox="0 0 100 21" fill="none">
+                                <path
+                                    d="M10.1705 2.99229C10.4884 2.11172 11.7338 2.11172 12.0517 2.99229L13.3673 6.63636C13.5104 7.03268 13.8865 7.29679 14.3079 7.29679H18.3219C19.3159 7.29679 19.7011 8.58975 18.8691 9.13375L15.8093 11.1345C15.4214 11.3882 15.2586 11.8751 15.416 12.3111L16.6263 15.6635C16.9523 16.5666 15.942 17.3655 15.1384 16.84L11.6584 14.5645C11.3259 14.3471 10.8963 14.3471 10.5638 14.5645L7.0838 16.84C6.28021 17.3655 5.26991 16.5666 5.59594 15.6635L6.80625 12.3111C6.96363 11.8751 6.80084 11.3882 6.41294 11.1345L3.35309 9.13375C2.52115 8.58975 2.90635 7.29679 3.90037 7.29679H7.91436C8.33571 7.29679 8.71186 7.03268 8.85494 6.63636L10.1705 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M29.6149 2.99229C29.9328 2.11172 31.1781 2.11172 31.496 2.99229L32.8116 6.63636C32.9547 7.03268 33.3308 7.29679 33.7522 7.29679H37.7662C38.7602 7.29679 39.1454 8.58975 38.3135 9.13375L35.2536 11.1345C34.8657 11.3882 34.7029 11.8751 34.8603 12.3111L36.0706 15.6635C36.3966 16.5666 35.3863 17.3655 34.5828 16.84L31.1027 14.5645C30.7703 14.3471 30.3406 14.3471 30.0082 14.5645L26.5281 16.84C25.7245 17.3655 24.7142 16.5666 25.0403 15.6635L26.2506 12.3111C26.408 11.8751 26.2452 11.3882 25.8573 11.1345L22.7974 9.13375C21.9655 8.58975 22.3507 7.29679 23.3447 7.29679H27.3587C27.78 7.29679 28.1562 7.03268 28.2993 6.63636L29.6149 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M49.0592 2.99229C49.3771 2.11172 50.6225 2.11172 50.9404 2.99229L52.256 6.63636C52.399 7.03268 52.7752 7.29679 53.1965 7.29679H57.2105C58.2045 7.29679 58.5897 8.58975 57.7578 9.13375L54.698 11.1345C54.31 11.3882 54.1473 11.8751 54.3046 12.3111L55.515 15.6635C55.841 16.5666 54.8307 17.3655 54.0271 16.84L50.5471 14.5645C50.2146 14.3471 49.785 14.3471 49.4525 14.5645L45.9725 16.84C45.1689 17.3655 44.1586 16.5666 44.4846 15.6635L45.6949 12.3111C45.8523 11.8751 45.6895 11.3882 45.3016 11.1345L42.2418 9.13375C41.4098 8.58975 41.795 7.29679 42.789 7.29679H46.803C47.2244 7.29679 47.6005 7.03268 47.7436 6.63636L49.0592 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M68.5035 2.99229C68.8214 2.11172 70.0668 2.11172 70.3847 2.99229L71.7003 6.63636C71.8434 7.03268 72.2195 7.29679 72.6409 7.29679H76.6549C77.6489 7.29679 78.0341 8.58975 77.2021 9.13375L74.1423 11.1345C73.7544 11.3882 73.5916 11.8751 73.749 12.3111L74.9593 15.6635C75.2853 16.5666 74.275 17.3655 73.4714 16.84L69.9914 14.5645C69.6589 14.3471 69.2293 14.3471 68.8968 14.5645L65.4168 16.84C64.6132 17.3655 63.6029 16.5666 63.9289 15.6635L65.1393 12.3111C65.2966 11.8751 65.1339 11.3882 64.7459 11.1345L61.6861 9.13375C60.8542 8.58975 61.2394 7.29679 62.2334 7.29679H66.2474C66.6687 7.29679 67.0449 7.03268 67.1879 6.63636L68.5035 2.99229Z"
+                                    fill="#555555" />
+                                <path
+                                    d="M87.9479 2.99229C88.2658 2.11172 89.5111 2.11172 89.829 2.99229L91.1446 6.63636C91.2877 7.03268 91.6639 7.29679 92.0852 7.29679H96.0992C97.0932 7.29679 97.4784 8.58975 96.6465 9.13375L93.5866 11.1345C93.1987 11.3882 93.0359 11.8751 93.1933 12.3111L94.4036 15.6635C94.7297 16.5666 93.7194 17.3655 92.9158 16.84L89.4357 14.5645C89.1033 14.3471 88.6736 14.3471 88.3412 14.5645L84.8611 16.84C84.0576 17.3655 83.0473 16.5666 83.3733 15.6635L84.5836 12.3111C84.741 11.8751 84.5782 11.3882 84.1903 11.1345L81.1304 9.13375C80.2985 8.58975 80.6837 7.29679 81.6777 7.29679H85.6917C86.1131 7.29679 86.4892 7.03268 86.6323 6.63636L87.9479 2.99229Z"
+                                    fill="#555555" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-end gap-[16px] mt-[73px] pb-[152px]">
+                <div class="flex gap-[8px]">
+                    <div
+                        class="w-[59px] h-[59px] rounded-[9px] bg-white shadow-[0px_100px_200px_0px_rgba(1,23,54,0.10)] flex justify-center items-center group hover:bg-[#F40] duration-300 cursor-pointer">
+                        <p
+                            class="text-[rgba(0, 0, 0, 0.70)] font-poppins text-[24px] font-semibold leading-[30px] group-hover:text-white duration-300">
+                            1</p>
+                    </div>
+                    <div
+                        class="w-[59px] h-[59px] rounded-[9px] bg-white shadow-[3px_5px_22px_0px_rgba(0,0,0,0.08)] flex justify-center items-center group hover:bg-[#F40] duration-300 cursor-pointer">
+                        <p
+                            class="text-[rgba(0, 0, 0, 0.70)] font-poppins text-[24px] font-semibold leading-[30px] group-hover:text-white duration-300">
+                            2</p>
+                    </div>
+                    <div
+                        class="w-[59px] h-[59px] rounded-[9px] bg-white shadow-[3px_5px_22px_0px_rgba(0,0,0,0.08)] flex justify-center items-center group hover:bg-[#F40] duration-300 cursor-pointer">
+                        <p
+                            class="text-[rgba(0, 0, 0, 0.70)] font-poppins text-[24px] font-semibold leading-[30px] group-hover:text-white duration-300">
+                            3</p>
+                    </div>
+                </div>
+                <div
+                    class="w-[92px] h-[47px] rounded-[9px] border-[1px] border-[#9C9C9C] bg-[rgba(196, 196, 196, 0.00)] flex justify-center items-center group hover:bg-[#F40] hover:border-none duration-300 cursor-pointer">
+                    <p
+                        class="text-[#555] font-poppins text-[16px] font-normal opacity-[0.77] group-hover:text-white duration-300">
+                        Next >></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#0D0D0D]" id="blog">
+        <div class="container_ pb-20">
+            <img class="pt-[29px] cursor-pointer"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAABjCAYAAABg+dWrAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAACOBSURBVHgB7Z0HmJxVucfP7GZTSIAAoUMISAu9hWYoQXpHVEApwgVRAYGL6APSLxdQLl1FqkDoHbkQRKWpAaSIFCkGEykSIJGQ7GbrzHf/vzPnHc5++Wbm25KwyH2f5+zsfPWct5dzzjj3/zAgoOAGKCRJUhAk4WuD2uJqo9WWUxultoTasNRtrWofqc1Um6E2Te19ta6MZw4oGHCECMiiXyurjVdbV21rtZXURqoNzvkokD9L7R21J9SeU3tJ7RW1Dlce+4AkykCAMWonqD2uNtuVEdWfrUXt2fCO9d0A1ggLFOB+V1Y726rd4MocnCygBqFvU9tx1VVXHRL68rkECLCd2oNqbW7BESDdUFOPNTY27qrPJvcpwQLngmADVte/Z6rtpTa0J7erfbzUUksVhw4d2r7CCiuMKpVKDYMHDx70r3/9a/bbb7/94ccff1zUNYu4skEf1INnd6o9pHae+vgkBxakYV/QhADp/6l2oisb3nrQseaaa3ZusMEGg0ePHt222WabjVh44YULra2trqGhwfHZ0tLiLxw0aJAbMmSIKxaLbtiwYdN17oOnnnqq+Oyzzw7/4x//iMpbz+UjerPa/wwfPvyK5ubm6WW/Yf7DgnhLQRzmghRc5cqeUK33dq2//vqzJ0yYMHTnnXdeSAhxzz33nHvzzTfd66+/7l599VU3Z84cT4TOzk4niSi/RAiDGJIUJ2K5FVdc0Y0bN8594QtfcMstt1xbV1fXq7feeuvg+++/f44u39SVVWMt+LPaUWpPhf7PV+mYr4QIA+Ad+6tdrLZUtWsXWmih4v7775/sscceg6R63GOPPebE0U7c7D766CP/rN4Ar4cwIq7bZZddnAzzjPb29pZTTjll5j/+8Y9VXVmNVQMk6Xi1iXp/aaDGIHkAHY0tINDKNJZSJ6XDDjus89e//nXyyCOPJEcffXQibk7CoPu9Lb744onel9x8883JDTfc8NxKK61EfNHsahvzc9RGuM8aBFeQwOsKNYxn5iC32GKL9vvuuy/5wx/+4JEzcuTIBeYtSeUlhx56aHL99de/e+65596uY5NrXI/+w71e/DPh5tLJiAh0nAHMMzAZ09KPfvSj4uTJk5NTTz01kSpaYARIt8UWWyw566yzkgcffHDmGmusMdGVUyLVrr/DlVMthQFLkKDD6RzqCKOcSQR5P6gEBp5svvnm800F9aTRh0022QR1Nefkk0+m78/XuP5GteFuAEflhdDOcFXUkQxmETtwzjnnJEssscSnToB0GzVqVHLppZeirm7S90erXAeDnffVr361ccBJBdJwxhln4A7u66pEyePHj08efvjh5Fvf+lbS1NQ04IhgTc5DIqlIbrrppjv1/Z4q1xH8HabWMJCIUQhEWEPtPZfRcVSQ3NHkgAMO6KaKFJQhJclXvvKVZJ999vHXLb300h4Z7lMkBv064ogjkjvuuON/9f3uKtfh2m7O2PuDGH1+AJ1YeeWVh0ybNu1ROpY+v/baa7tLLrnEXXHFFU4DqxxfcsklnVSUW2eddbxEEZjxqWjWKfhyzzzzjJMd8cFcb2OIvgDxh7wqt/3229/x9a9/nSzADhmXvcBx9Y/6R9KXKLzXdxoXfO1rX2sQggl6zk9fIzvgJOJOEa2T3q0glA7zXV6KP2bNomT7VCLOB3aKht2sWbPclClTPJEWFJBGOf74492666576ze/+U2Cv00yLjtX9uJU4cCck15Bnwhx5plnopZW0denXdmtqwBIvPrqq90///lPd9ppp/kckMGGG27orrzySou8/YDDMyuSwfX8/+GHHzqpKy8pNAjzl7/8xf3+97+vEGx+AmmT8847z7333nvnXXDBBYfq0NKpS+aqbSc8PHP66acnvY2+G10vIKqiNUglXanPjdLXHHLIIW699dZzJ554omtra+t2bu+993Ybb7xxJVFH43FvvPGGW3bZZZ2MuSekcT/faUqDuLFjx7rtttvO55zeeecdf1yBoSdS+j39ARCbVItsxgbq38QPPvhgM9edgUmdjxaD3AYRHn30UScGdT2FeomvqiBxLCgiJnm2R/ocibaDDz7YKVhzs2fPnudeknVKXTsSeuSBaI8//rgn3gknnOCmT5/ukY4qUsLOJ/K4HsLxCZGUifXP2nTTTb2tUWziORcio/IgUH8BY/jxj388QlxPyfbRjEu2V9v9lVdeKfTWTvRGIrw0/PznPx8kbrlc31dPnaTTPlmHbs8CMqcHHngg6WrfkAiM+qKLLuqU8nD33nuvGzFihLv22msx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"
+                alt="logo-footer">
+            <div class="row">
+                <div class="col-12 lg:col-5">
+                    <p class="max-w-[448px] text-white font-poppins text-[16px] font-normal leading-[185%] opacity-60">
+                        Sed nec ultricies felis, vitae facilisis ipsum. Morbi id turpis euismod, rhoncus tortor quis,
+                        lobortis sapien. Sed imperdiet nulla in leo ullamcorper, in finibus elit porta.</p>
+                    <div class="flex gap-5 mt-9">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <svg class="duration-300 hover:translate-y-[-5px]" xmlns="http://www.w3.org/2000/svg"
+                                width="35" height="35" viewBox="0 0 35 35" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2.89746 17.4679C2.89746 24.6714 8.12925 30.6614 14.9717 31.8761V21.4113H11.3495V17.387H14.9717V14.1668C14.9717 10.5445 17.3057 8.53289 20.6068 8.53289C21.6524 8.53289 22.7802 8.69348 23.8258 8.85407V12.5573H21.9748C20.2035 12.5573 19.8015 13.4423 19.8015 14.57V17.387H23.6652L23.0217 21.4113H19.8015V31.8761C26.6439 30.6614 31.8757 24.6726 31.8757 17.4679C31.8757 9.45416 25.3556 2.89783 17.3866 2.89783C9.41757 2.89783 2.89746 9.45416 2.89746 17.4679Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/i/flow/login" target="_blank">
+                            <svg class="duration-300 hover:translate-y-[-5px]" xmlns="http://www.w3.org/2000/svg"
+                                width="36" height="35" viewBox="0 0 36 35" fill="none">
+                                <path
+                                    d="M18.1609 2.17334C9.75942 2.17334 2.94727 8.9855 2.94727 17.3869C2.94727 25.7884 9.75942 32.6005 18.1609 32.6005C26.5623 32.6005 33.3745 25.7884 33.3745 17.3869C33.3745 8.9855 26.5623 2.17334 18.1609 2.17334ZM25.4722 13.6413C25.4824 13.8009 25.4824 13.9673 25.4824 14.1303C25.4824 19.1154 21.6858 24.8579 14.748 24.8579C12.6086 24.8579 10.6254 24.2364 8.9546 23.1667C9.26023 23.2007 9.55227 23.2143 9.8647 23.2143C11.6306 23.2143 13.2538 22.6166 14.5476 21.6046C12.8904 21.5707 11.4981 20.484 11.0227 18.9898C11.6034 19.0747 12.1264 19.0747 12.724 18.9219C11.8707 18.7485 11.1038 18.2851 10.5534 17.6103C10.0031 16.9356 9.70335 16.0911 9.70509 15.2204V15.1728C10.2043 15.4547 10.7918 15.6279 11.4064 15.6516C10.8897 15.3073 10.466 14.8407 10.1727 14.2934C9.87952 13.746 9.72588 13.1348 9.72546 12.5138C9.72546 11.8109 9.90884 11.1691 10.2382 10.6121C11.1854 11.7781 12.3672 12.7316 13.707 13.4109C15.0468 14.0902 16.5146 14.4799 18.0148 14.5548C17.4817 11.9909 19.397 9.91597 21.6994 9.91597C22.7861 9.91597 23.7641 10.371 24.4534 11.1045C25.3058 10.9449 26.1208 10.6257 26.8475 10.1978C26.5657 11.0706 25.9748 11.8075 25.1904 12.2727C25.951 12.1912 26.6845 11.9807 27.3637 11.6852C26.8509 12.4391 26.2091 13.1081 25.4722 13.6413Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a href="https://www.google.com/" target="_blank">
+                            <svg class="duration-300 hover:translate-y-[-5px]" xmlns="http://www.w3.org/2000/svg"
+                                width="36" height="35" viewBox="0 0 36 35" fill="none">
+                                <path
+                                    d="M17.9353 2.17334C9.53384 2.17334 2.72168 8.9855 2.72168 17.3869C2.72168 25.7884 9.53384 32.6005 17.9353 32.6005C26.3367 32.6005 33.1489 25.7884 33.1489 17.3869C33.1489 8.9855 26.3367 2.17334 17.9353 2.17334ZM19.1748 21.1496C17.684 23.2482 14.6888 23.8595 12.3524 22.9596C10.0093 22.0665 8.34528 19.5909 8.54563 17.0677C8.59657 13.9809 11.4389 11.2743 14.5258 11.3796C16.0064 11.3117 17.3987 11.9535 18.5329 12.8602C18.0473 13.4103 17.5481 13.9401 17.0116 14.4325C15.6498 13.4918 13.7108 13.2236 12.349 14.3103C10.3998 15.6584 10.3115 18.8404 12.186 20.2904C14.0096 21.9442 17.4565 21.1224 17.9624 18.5891C16.8214 18.5721 15.6736 18.5891 14.5326 18.5517C14.5292 17.8691 14.5258 17.19 14.5292 16.5074C16.4377 16.5006 18.3496 16.4972 20.2615 16.5142C20.3735 18.1204 20.1596 19.8252 19.1748 21.1496ZM27.4098 18.2189C26.8393 18.2257 26.2688 18.2291 25.6983 18.2325C25.6915 18.803 25.6881 19.3735 25.6881 19.944H23.98C23.9732 19.3735 23.9732 18.8064 23.9698 18.2359C23.3993 18.2291 22.8288 18.2257 22.2582 18.2189V16.5176C22.8288 16.5108 23.3993 16.5074 23.9698 16.5074C23.9732 15.9369 23.98 15.3664 23.9834 14.7959H25.6881L25.6983 16.5074C26.2688 16.5142 26.8393 16.5142 27.4098 16.5176V18.2189Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 lg:col-7">
+                    <div class="row mt-[25px] lg:mt-0">
+                        <div class="col-12 sm:col-6 md:col-3 mt-5 lg:mt-0">
+                            <ul>
+                                <li
+                                    class="text-white text-[18px] font-semibold leading-[150%] lg:text-[17px] xl:text-[18px]">
+                                    CUSTOM LINKS</li>
+                                <li class="mt-[24px]"><a href=""
+                                        class="text-white font-poppins text-[18px] font-normal leading-[150%] opacity-70">Lorem
+                                        ipsum</a></li>
+                                <li class="mt-[16px]"><a href=""
+                                        class="text-white font-poppins text-[18px] font-normal leading-[150%] opacity-70 ">Lorem
+                                        ipsum</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 sm:col-6 md:col-3 mt-5 lg:mt-0">
+                            <ul>
+                                <li class="text-white text-[18px] font-semibold leading-[150%]">PRODUCTS</li>
+                                <li class="mt-[24px]"><a href=""
+                                        class="text-white font-poppins text-[18px] font-normal leading-[150%] opacity-70">Lorem
+                                        ipsum</a></li>
+                                <li class="mt-[16px]"><a href=""
+                                        class="text-white font-poppins text-[18px] font-normal leading-[150%] opacity-70 ">Lorem
+                                        ipsum</a></li>
+                                <li class="mt-[16px]"><a href=""
+                                        class="text-white font-poppins text-[18px] font-normal leading-[150%] opacity-70 ">Lorem
+                                        ipsum</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 sm:col-6 md:col-3 mt-5 lg:mt-0">
+                            <ul>
+                                <li
+                                    class="text-white text-[18px] font-semibold leading-[150%] lg:text-[16px] xl:text-[18px]">
+                                    OUR COMPANY</li>
+                                <li class="mt-[24px]"><a href=""
+                                        class="text-white font-poppins text-[18px] font-normal leading-[150%] opacity-70">Lorem
+                                        ipsum</a></li>
+                                <li class="mt-[16px]"><a href=""
+                                        class="text-white font-poppins text-[18px] font-normal leading-[150%] opacity-70 ">Lorem
+                                        ipsum</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 sm:col-6 md:col-3 mt-5 lg:mt-0">
+                            <ul>
+                                <li
+                                    class="text-white text-[18px] font-semibold leading-[150%] lg:text-[15px] xl:text-[18px]">
+                                    YOUR ACCOUNT</li>
+                                <li class="mt-[24px]"><a href=""
+                                        class="text-white font-poppins text-[18px] font-normal leading-[150%] opacity-70">Lorem
+                                        ipsum</a></li>
+                                <li class="mt-[16px]"><a href=""
+                                        class="text-white font-poppins text-[18px] font-normal leading-[150%] opacity-70 ">Lorem
+                                        ipsum</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full h-[72px] bg-[#171717] flex items-center justify-center">
+            <p class="text-white font-Poppins text-[18px] text-center font-normal leading-[150%] opacity-70">
+                ©
+                Copyright
+                SNKRPLTS
+                <script type="text/javascript">document.write(new Date().getFullYear());</script>
+            </p>
+        </div>
+    </footer>
+    <script src="./dist/app.js"></script>
+</body>
+
+</html>
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
